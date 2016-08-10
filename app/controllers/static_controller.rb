@@ -14,6 +14,6 @@ class StaticController < ApplicationController
   def studio
   end
 
-  def create_a_project
+  def start_a_project
   end
 end

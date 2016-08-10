@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get '/about', to: 'static#about'
   get '/team', to: 'static#team'
   get '/contact', to: 'static#contact'
-  get '/create-a-project', to: 'static#create_a_project'
+  get '/start-a-project', to: 'static#start_a_project'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
