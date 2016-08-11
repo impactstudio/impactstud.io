@@ -15,6 +15,9 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+ $pumpkin: #e09350;
+ $smoke: #999;
+
 /* =============
 /* MENU
 /* 1.0 NAVIGATION
@@ -27,27 +30,28 @@
 
 .navbar {
   border: none;
-  background-color: #999;
+  background-color: $smoke;
   border-radius: 0;
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 1;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #fff;
+  color: white;
 }
 #start-a-project {
   padding: 5px;
   margin-top:9px;
   margin-bottom: 9px;
   color: #fff;
-  background-color: #e09350;
+  background-color: $pumpkin;
   border-radius: 5px;
   box-shadow: 1px 1px 2px #666;
   transition: ease-out .25s;
 }
 #start-a-project:hover {
-  color: #e09350;
+  color: $pumpkin;
   background-color: #fff;
   transition: ease .25s;
 }
@@ -55,3 +59,11 @@
 /* ======================
 2.0 HERO
 ====================== */
+.hero {
+  margin-top: 50px;
+  width: 100%;
+}
+.hero-slogan {
+  font-size: 80px;
+  background-color: $pumpkin;
+}
