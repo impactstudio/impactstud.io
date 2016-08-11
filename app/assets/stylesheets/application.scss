@@ -14,14 +14,14 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.logo {
-  width: 200px;
-  height: auto;
-}
-
 #start-a-project {
-  // padding: 5px;
-  box-sizing: border-box;
-  border: 2px solid black;
-  border-radius: 40%;
+  padding: 5px;
+  margin-top:9px;
+  margin-bottom: 9px;
+  color: #fff;
+  background-color: #e09350;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #666;
+}
+#start-a-project:hover {
 }
