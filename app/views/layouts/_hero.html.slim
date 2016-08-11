@@ -1,4 +1,7 @@
 #hero
   .row
     .col-md-12
-      h1#hero-slogan "We don't handshake, we BRO-FIST"
+      - if request.fullpath.include?("about")
+        h1#hero-slogan "We don't handshake, we BRO-FIST"
+      - else
+        h1#hero-slogan "By the little guy, for the little guy."
