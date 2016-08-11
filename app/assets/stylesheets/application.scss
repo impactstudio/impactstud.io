@@ -11,9 +11,31 @@
  * file per style scope.
  *
  */
-@import "bootstrap-sprockets";
-@import "bootstrap";
 
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+/* =============
+/* MENU
+/* 1.0 NAVIGATION
+/* 2.0 HERO
+*/
+
+/* ======================
+1.0 NAVBAR
+====================== */
+
+.navbar {
+  border: none;
+  background-color: #999;
+  border-radius: 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
 #start-a-project {
   padding: 5px;
   margin-top:9px;
@@ -21,7 +43,15 @@
   color: #fff;
   background-color: #e09350;
   border-radius: 5px;
-  box-shadow: 2px 2px 2px #666;
+  box-shadow: 1px 1px 2px #666;
+  transition: ease-out .25s;
 }
 #start-a-project:hover {
+  color: #e09350;
+  background-color: #fff;
+  transition: ease .25s;
 }
+
+/* ======================
+2.0 HERO
+====================== */
