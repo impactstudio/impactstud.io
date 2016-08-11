@@ -12,25 +12,44 @@
  *
  */
 
- @import "bootstrap-sprockets";
- @import "bootstrap";
-
- $pumpkin: #e09350;
- $smoke: #999;
-
-/* =============
-/* MENU
-/* 1.0 DEFAULT
-/* 2.0 NAVIGATION
-/* 3.0 HERO
-*/
+/*******************
+MENU:
+!!! media queries included in each section (if applicable)
+1.0 DEFAULT
+2.0 NAVIGATION
+3.0 HERO
+4.0
+********************/
 
 /* ======================
 1.0 DEFAULT
 ====================== */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$pumpkin: #e09350;
+$smoke: #999;
+
 .row, .col-md-12 {
   padding: 0;
   margin: 0;
+}
+
+.btn-pumpkin {
+  color: #fff;
+  background-color: $pumpkin;
+  padding: 5px;
+  margin-top:9px;
+  margin-bottom: 9px;
+  box-shadow: 1px 1px 2px #666;
+  transition: ease-out .25s;
+}
+
+.btn-pumpkin:hover{
+  color: $pumpkin;
+  background-color: #fff;
+  transition: ease .25s;
 }
 
 /* ======================
@@ -73,14 +92,45 @@
   width: 100vw;
   background-image: image-url("impactstudio-web-design_home-hero.svg");
   background-size: cover;
-  background-position-y: 18px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-position-y: 16px;
+  background-color: $pumpkin;
   height: 600px;
   padding: 0;
 }
-#hero-slogan {
+#hero-text {
   position: relative;
   top: 135px;
-  font-size: 8em;
-  padding: 50px;
   text-align: center;
+}
+#hero-slogan {
+  font-size: 7vw;
+  padding: 50px 50px 0 50px;
+}
+#btn-hero {
+  font-size: 2vw;
+}
+
+@media screen and (min-width: 913px) and (max-width: 1070px) {
+  #hero {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  #hero {
+    height: 380px;
+    top: 60px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #hero {
+    height: 320px;
+  }
+  #hero-slogan {
+    font-size: 10vw;
+    top: 0;
+  }
 }
