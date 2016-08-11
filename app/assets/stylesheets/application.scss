@@ -20,12 +20,21 @@
 
 /* =============
 /* MENU
-/* 1.0 NAVIGATION
-/* 2.0 HERO
+/* 1.0 DEFAULT
+/* 2.0 NAVIGATION
+/* 3.0 HERO
 */
 
 /* ======================
-1.0 NAVBAR
+1.0 DEFAULT
+====================== */
+.row, .col-md-12 {
+  padding: 0;
+  margin: 0;
+}
+
+/* ======================
+2.0 NAVBAR
 ====================== */
 
 .navbar {
@@ -33,7 +42,7 @@
   background-color: $smoke;
   border-radius: 0;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0;
   z-index: 1;
 }
@@ -57,13 +66,21 @@
 }
 
 /* ======================
-2.0 HERO
+3.0 HERO
 ====================== */
-.hero {
-  margin-top: 50px;
-  width: 100%;
+#hero {
+  margin: 30px 0 0 0;
+  width: 100vw;
+  background-image: image-url("impactstudio-web-design_home-hero.svg");
+  background-size: cover;
+  background-position-y: 18px;
+  height: 600px;
+  padding: 0;
 }
-.hero-slogan {
-  font-size: 80px;
-  background-color: $pumpkin;
+#hero-slogan {
+  position: relative;
+  top: 135px;
+  font-size: 8em;
+  padding: 50px;
+  text-align: center;
 }
