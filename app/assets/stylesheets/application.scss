@@ -30,10 +30,15 @@ MENU:
 
 $pumpkin: #e09350;
 $smoke: #999;
+$sky: #55CADB;
 
 .row, .col-md-12 {
   padding: 0;
   margin: 0;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: $pumpkin;
 }
 
 .btn-pumpkin {
@@ -73,13 +78,13 @@ $smoke: #999;
   margin-top:9px;
   margin-bottom: 9px;
   color: #fff;
-  background-color: $pumpkin;
+  background-color: $sky;
   border-radius: 5px;
   box-shadow: 1px 1px 2px #666;
   transition: ease-out .25s;
 }
 #start-a-project:hover {
-  color: $pumpkin;
+  color: $sky;
   background-color: #fff;
   transition: ease .25s;
 }
@@ -110,6 +115,13 @@ $smoke: #999;
 }
 #btn-hero {
   font-size: 2vw;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 1070px) {
+  #hero-text{
+    top: 65px;
+  }
 }
 
 @media screen and (min-width: 913px) and (max-width: 1070px) {
@@ -123,6 +135,9 @@ $smoke: #999;
     height: 380px;
     top: 60px;
   }
+  #btn-hero {
+    font-size: 3vw;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -130,7 +145,10 @@ $smoke: #999;
     height: 320px;
   }
   #hero-slogan {
-    font-size: 10vw;
+    font-size: 8vw;
     top: 0;
+  }
+  #btn-hero {
+    font-size: 5vw;
   }
 }
