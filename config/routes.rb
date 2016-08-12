@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :projects, only: [:index, :show]
   root 'static#home'
   get '/about', to: 'static#about'
