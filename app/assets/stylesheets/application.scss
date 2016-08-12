@@ -20,6 +20,7 @@ MENU:
 3.0 HOME - GENERAL
 3.1 HOME - HERO
 3.2 HOME - WHAT ABOUT
+3.3 HOME - PROJECTS
 ********************/
 
 /* ======================
@@ -115,7 +116,13 @@ h2.home-header {
   background: -webkit-linear-gradient($pumpkin, #ff6a47);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  border-bottom: 5px solid $sky;
+  border-bottom: 3px solid $sky;
+  text-transform: uppercase;
+}
+
+.home-container{
+  margin: 15px 0;
+  width: 100%;
 }
 
 #btn-home-content {
@@ -193,3 +200,33 @@ h2.home-header {
 /* ======================
 3.2 HOME - WHAT ABOUT
 ====================== */
+
+/* ======================
+3.2 HOME - PROJECTS
+====================== */
+#projects {
+  width: 100%;
+  padding: 0;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.project {
+  display:block;
+  width:25%;
+  margin: 0;
+  padding: 0;
+  border: 2px solid #fff;
+  border-bottom: none;
+}
+.project img {
+  width: 100%;
+}
+
+@media screen and (max-width: 400px) {
+  .project {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
