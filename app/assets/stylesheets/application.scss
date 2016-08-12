@@ -77,6 +77,16 @@ html {
 .navbar-default .navbar-nav > li > a {
   color: white;
 }
+
+.navbar-toggle {
+  background-color: #ddd;
+  transition: ease-out .25s;
+  border-color: none;
+}
+.navbar-toggle:hover {
+  background-color: #bfbfbf !important;
+  transition: ease-in .25s;
+}
 #start-a-project {
   padding: 5px;
   margin-top:9px;
