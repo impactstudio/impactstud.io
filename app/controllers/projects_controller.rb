@@ -4,4 +4,9 @@ class ProjectsController < ApplicationController
 
   def show
   end
+
+  def new
+    @project = Project.new
+    authorize @project
+  end
 end
