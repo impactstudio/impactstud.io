@@ -38,6 +38,10 @@ html {
   background-color: $pumpkin;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .row, .col-md-12 {
   padding: 0;
   margin: 0;
