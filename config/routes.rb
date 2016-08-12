@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, path_names: {
+    sign_up: ""
+  }
   resources :projects, only: [:index, :show]
   root 'static#home'
   get '/about', to: 'static#about'
