@@ -17,8 +17,8 @@ MENU:
 !!! media queries included in each section (if applicable)
 1.0 DEFAULT
 2.0 NAVIGATION
-3.0 HERO
-4.0
+3.1 HOME - HERO
+3.2 HOME - WHAT ABOUT
 ********************/
 
 /* ======================
@@ -29,8 +29,12 @@ MENU:
 @import "bootstrap";
 
 $pumpkin: #e09350;
-$smoke: #999;
+$smoke: #878888;
 $sky: #55CADB;
+
+html {
+  background-color: $pumpkin;
+}
 
 .row, .col-md-12 {
   padding: 0;
@@ -44,7 +48,7 @@ $sky: #55CADB;
 .btn-pumpkin {
   color: #fff;
   background-color: $pumpkin;
-  padding: 5px;
+  padding: 7px;
   margin-top:9px;
   margin-bottom: 9px;
   box-shadow: 1px 1px 2px #666;
@@ -52,8 +56,8 @@ $sky: #55CADB;
 }
 
 .btn-pumpkin:hover{
-  color: $pumpkin;
-  background-color: #fff;
+  color: #fff;
+  background-color: $sky;
   transition: ease .25s;
 }
 
@@ -84,13 +88,13 @@ $sky: #55CADB;
   transition: ease-out .25s;
 }
 #start-a-project:hover {
-  color: $sky;
-  background-color: #fff;
+  color: #fff;
+  background-color: $pumpkin;
   transition: ease .25s;
 }
 
 /* ======================
-3.0 HERO
+3.1 HOME - HERO
 ====================== */
 #hero {
   margin: 30px 0 0 0;
@@ -142,11 +146,14 @@ $sky: #55CADB;
 
 @media screen and (max-width: 400px) {
   #hero {
-    height: 320px;
+    height: 300px;
   }
   #hero-slogan {
     font-size: 8vw;
     top: 0;
+  }
+  #hero-text {
+    top: 20px;
   }
   #btn-hero {
     font-size: 5vw;
