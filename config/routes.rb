@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     get "/pokemon_center" => "devise/sessions#new"
   end
 
-  resources :projects, only: [:index, :show]
+  resources :projects
   root 'static#home'
   get '/about', to: 'static#about'
   get '/team', to: 'static#team'
