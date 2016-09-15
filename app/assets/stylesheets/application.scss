@@ -39,9 +39,10 @@ MENU:
   font-style: normal;
 }
 
+$tangerine: #f27022;
 $pumpkin: #fd9846;
 $smoke: #878888;
-$sky: #55CADB;
+$sky: #00cbdd;
 $cream: CornSilk;
 $typewriter: "AmericanTypewriter", Courier, 'Courier New';
 
@@ -56,6 +57,8 @@ body {
 
 p {
   line-height: 25px;
+  margin-bottom: 15px;
+  font-size: 1.2em;
 }
 
 .hero {
@@ -75,6 +78,7 @@ p {
 
 .navigation {
   padding-left: 0;
+  margin-bottom: 30px;
 }
 
 .navigation li {
@@ -95,4 +99,16 @@ p {
 
 .navigation li a {
   color: black;
+}
+
+.project_button {
+  background-color: $tangerine;
+  color: white;
+  border: 3px solid white;
+  box-shadow: 0px 0px 0px 3px $sky,
+              0px 0px 3px 3px rgba(51, 51, 51, 0.7);
+  text-transform: uppercase;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 1.3em;
 }
