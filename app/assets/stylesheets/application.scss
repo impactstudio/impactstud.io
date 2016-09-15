@@ -30,7 +30,20 @@ MENU:
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+@font-face {
+  font-family: 'AmericanTypewriter';
+  src: url('/assets/american-typewriter.eot');
+  src: url('/assets/american-typewriter.eot') format('eot'),
+  url('/assets/american-typewriter.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $pumpkin: #fd9846;
 $smoke: #878888;
 $sky: #55CADB;
 $cream: CornSilk;
+
+body {
+  font-family: "AmericanTypewriter";
+}
