@@ -47,6 +47,8 @@ $sky: #00cbdd;
 $cream: CornSilk;
 $typewriter: "AmericanTypewriter", Courier, 'Courier New';
 $robot: 'Roboto', sans-serif;
+$ease-in: ease-in .3s;
+$ease-out: ease-out .3s;
 
 html {
   height: 100%;
@@ -126,6 +128,14 @@ h2 {
   padding: 8px;
   border-radius: 8px;
   font-size: 1.3em;
+  transition: $ease-out;
+}
+
+.project_button:hover {
+  background-color: $sky;
+  transition: $ease-in;
+  box-shadow: 0px 0px 0px 3px $tangerine,
+              0px 0px 3px 3px rgba(51, 51, 51, 0.7);
 }
 
 .bio {
@@ -133,6 +143,12 @@ h2 {
   color: $cream;
   font-family: $robot;
   text-shadow: 1px 1px 1px #333;
+}
+
+.bio-image {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
 }
 
 .content-wrapper {
