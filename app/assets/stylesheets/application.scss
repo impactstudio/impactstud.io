@@ -67,3 +67,23 @@ body {
   height: 83px;
   width: 670px;
 }
+
+.navigation li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 1.5em;
+}
+
+.navigation li:after {
+  content: "//";
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navigation li:last-child:after {
+  content: "";
+}
+
+.navigation li a {
+  color: black;
+}
