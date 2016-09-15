@@ -29,6 +29,7 @@ MENU:
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,700';
 
 @font-face {
   font-family: 'AmericanTypewriter';
@@ -45,6 +46,7 @@ $smoke: #878888;
 $sky: #00cbdd;
 $cream: CornSilk;
 $typewriter: "AmericanTypewriter", Courier, 'Courier New';
+$robot: 'Roboto', sans-serif;
 
 html {
   height: 100%;
@@ -58,16 +60,29 @@ body {
 p {
   line-height: 25px;
   margin-bottom: 15px;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 2.0em;
+  text-align: center;
+  font-family: $typewriter;
+}
+
+.headline {
   font-size: 1.2em;
 }
 
 .hero {
-    height: 664px;
     background-image: image-url("impact_studio_hero.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center -230px;
-    padding-top: 113px;
+    background-position: center center;
+}
+
+.hero-wrapper {
+  margin-bottom: 218px;
+  margin-top: 118px;
 }
 
 .impact_logo {
@@ -111,4 +126,16 @@ p {
   padding: 8px;
   border-radius: 8px;
   font-size: 1.3em;
+}
+
+.bio {
+  background-color: $pumpkin;
+  color: $cream;
+  font-family: $robot;
+  text-shadow: 1px 1px 1px #333;
+}
+
+.content-wrapper {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
