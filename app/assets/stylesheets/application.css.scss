@@ -36,18 +36,18 @@ MENU:
 
 @font-face {
   font-family: 'AmericanTypewriter';
-  src: url('/assets/american-typewriter.eot');
-  src: url('/assets/american-typewriter.eot') format('eot'),
-  url('/assets/american-typewriter.ttf') format('truetype');
+  src: asset-url('american-typewriter.eot');
+  src: asset-url('american-typewriter.eot') format('eot'),
+  asset-url('american-typewriter.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'AmericanTypewriterLight';
-  src: url('/assets/american-typewriter-light.eot');
-  src: url('/assets/american-typewriter-light.eot') format('eot'),
-  url('/assets/american-typewriter-light.ttf') format('truetype');
+  src: asset-url('american-typewriter-light.eot');
+  src: asset-url('american-typewriter-light.eot') format('eot'),
+  asset-url('american-typewriter-light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
