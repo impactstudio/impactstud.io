@@ -54,6 +54,7 @@ $pumpkin: #fd9846;
 $smoke: #878888;
 $sky: #00cbdd;
 $cream: CornSilk;
+$teal: #47a6a6;
 $typewriter: "AmericanTypewriter", Courier, 'Courier New';
 $lightTypewriter: 'AmericanTypewriterLight', Courier, 'Courier New';
 $robot: 'Roboto', sans-serif;
@@ -189,4 +190,25 @@ h3 {
   height: 173px;
   width: 173px;
   border-radius: 50%;
+}
+
+.reviews {
+  background-color: $teal;
+}
+
+.strong-h2 {
+  font-size: 2.4em;
+}
+
+blockquote {
+  border: none;
+  font-size: 2em;
+}
+
+blockquote p {
+  line-height: 37px;
+}
+
+blockquote p:first-child {
+  color: $smoke;
 }
