@@ -16,11 +16,14 @@
 MENU:
 !!! media queries included in each section (if applicable)
 1.0 DEFAULT
+  1.1 VARIABLES
 2.0 NAVIGATION
-3.0 HOME - GENERAL
-3.1 HOME - HERO
-3.2 HOME - WHAT ABOUT
-3.3 HOME - PROJECTS
+3.0 GENERAL
+3.1 REUSABLES
+4.0 HOME - HERO
+4.1 HOME - BIO
+4.2 HOME - TEAM
+4.3 HOME - REVIEWS
 ********************/
 
 /* ======================
@@ -49,6 +52,10 @@ MENU:
   font-style: normal;
 }
 
+/* ======================
+1.1 VARIABLES
+====================== */
+
 $tangerine: #f27022;
 $pumpkin: #fd9846;
 $smoke: #878888;
@@ -60,6 +67,43 @@ $lightTypewriter: 'AmericanTypewriterLight', Courier, 'Courier New';
 $robot: 'Roboto', sans-serif;
 $ease-in: ease-in .3s;
 $ease-out: ease-out .3s;
+
+/* ======================
+2.0 NAVIGATION
+====================== */
+
+.navigation {
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+.navigation li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 1.5em;
+}
+
+.navigation li:after {
+  content: "//";
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navigation li:last-child:after {
+  content: "";
+}
+
+.navigation li a {
+  color: black;
+}
+
+.navigation li a.active {
+  color: $tangerine;
+}
+
+/* ======================
+3.0 GENERAL
+====================== */
 
 html {
   height: 100%;
@@ -87,116 +131,6 @@ h3 {
   margin-top: 0;
 }
 
-.headline {
-  font-size: 1.2em;
-}
-
-.hero {
-    background-image: image-url("impact_studio_hero.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.hero-wrapper {
-  margin-bottom: 218px;
-  margin-top: 118px;
-}
-
-.impact_logo {
-  height: 83px;
-  width: 670px;
-  margin-bottom: 20px;
-}
-
-.navigation {
-  padding-left: 0;
-  margin-bottom: 30px;
-}
-
-.navigation li {
-  list-style-type: none;
-  display: inline-block;
-  font-size: 1.5em;
-}
-
-.navigation li:after {
-  content: "//";
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.navigation li:last-child:after {
-  content: "";
-}
-
-.navigation li a {
-  color: black;
-}
-
-.project_button {
-  background-color: $tangerine;
-  color: white;
-  border: 3px solid white;
-  box-shadow: 0px 0px 0px 3px $sky,
-              0px 0px 3px 3px rgba(51, 51, 51, 0.7);
-  text-transform: uppercase;
-  padding: 8px;
-  border-radius: 8px;
-  font-size: 1.3em;
-  transition: $ease-out;
-}
-
-.project_button:hover {
-  background-color: $sky;
-  transition: $ease-in;
-  box-shadow: 0px 0px 0px 3px $tangerine,
-              0px 0px 3px 3px rgba(51, 51, 51, 0.7);
-}
-
-.bio {
-  background-color: $pumpkin;
-  color: $cream;
-  font-family: $robot;
-  text-shadow: 1px 1px 1px #333;
-}
-
-.bio-image {
-  display: block;
-  margin: 0 auto;
-  width: 90%;
-}
-
-.content-wrapper {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-.team {
-  background-color: $tangerine;
-  color: $cream;
-}
-
-.section-big-fuckin-dick {
-  font-size: 5.2em;
-  font-family: $lightTypewriter;
-  margin-bottom: 50px;
-}
-
-.navigation li a.active {
-  color: $tangerine;
-}
-
-.thumbnail {
-  height: 173px;
-  width: 173px;
-  border-radius: 50%;
-}
-
-.reviews {
-  background-color: $teal;
-}
-
 blockquote {
   border: none;
   font-size: 2em;
@@ -221,5 +155,105 @@ blockquote p {
 blockquote p:first-child {
   color: $smoke;
   font-family: $lightTypewriter;
+}
+
+/* ======================
+3.1 REUSABLES
+====================== */
+
+.content-wrapper {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.headline {
+  font-size: 1.2em;
+}
+
+.section-big-fuckin-dick {
+  font-size: 5.2em;
+  font-family: $lightTypewriter;
+  margin-bottom: 50px;
+}
+
+/* ======================
+4.1 HOME - HERO
+====================== */
+
+.hero {
+    background-image: image-url("impact_studio_hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hero-wrapper {
+  margin-bottom: 218px;
+  margin-top: 118px;
+}
+
+.impact_logo {
+  height: 83px;
+  width: 670px;
+  margin-bottom: 20px;
+}
+
+.project_button {
+  background-color: $tangerine;
+  color: white;
+  border: 3px solid white;
+  box-shadow: 0px 0px 0px 3px $sky,
+              0px 0px 3px 3px rgba(51, 51, 51, 0.7);
+  text-transform: uppercase;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 1.3em;
+  transition: $ease-out;
+}
+
+.project_button:hover {
+  background-color: $sky;
+  transition: $ease-in;
+  box-shadow: 0px 0px 0px 3px $tangerine,
+              0px 0px 3px 3px rgba(51, 51, 51, 0.7);
+}
+
+/* ======================
+4.2 HOME - BIO
+====================== */
+
+.bio {
+  background-color: $pumpkin;
+  color: $cream;
+  font-family: $robot;
   text-shadow: 1px 1px 1px #333;
+}
+
+.bio-image {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.thumbnail {
+  height: 173px;
+  width: 173px;
+  border-radius: 50%;
+}
+
+/* ======================
+4.3 HOME - TEAM
+====================== */
+
+.team {
+  background-color: $tangerine;
+  color: $cream;
+}
+
+/* ======================
+4.4 HOME - REVIEWS
+====================== */
+
+.reviews {
+  background-color: $teal;
 }
