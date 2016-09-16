@@ -1,7 +1,7 @@
 <ul class="navigation">
-  <li><a href="">Home</a></li>
-  <li><a href="">About</a></li>
-  <li><a href="">Our Team</a></li>
+  <li><%= link_to "Home", root_path, class: ("active" if current_page?(root_path)) %></li>
+  <li><%= link_to "About", about_path, class: ("active" if current_page?(about_path)) %></li>
+  <li><%= link_to "Our Team", team_path, class: ("active" if current_page?(team_path)) %></li>
   <li><a href="">Portfolio</a></li>
   <li><a href="">Contact</a></li>
 </ul>

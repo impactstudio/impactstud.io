@@ -176,3 +176,7 @@ h2 {
   font-size: 5.2em;
   font-family: $typewriter;
 }
+
+.navigation li a.active {
+  color: $tangerine;
+}

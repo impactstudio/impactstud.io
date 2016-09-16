@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   get '/contact', to: 'static#contact'
   get '/start-a-project', to: 'static#start_a_project'
   get '/studio', to: 'static#studio'
+  get '/portfolio', to: 'static#portfolio'
 end
