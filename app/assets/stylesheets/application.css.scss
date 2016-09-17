@@ -74,6 +74,14 @@ $ease-out: ease-out .3s;
 2.0 NAVIGATION
 ====================== */
 
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+}
+
 .navigation {
   padding-left: 0;
   margin-bottom: 30px;
@@ -150,7 +158,7 @@ blockquote:before {
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;
-  margin-right: 9.25em;
+  // margin-right: 9.25em THIS BITCH;
   vertical-align: -0.4em;
 }
 
