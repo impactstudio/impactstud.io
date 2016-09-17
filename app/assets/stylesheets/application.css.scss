@@ -243,6 +243,7 @@ blockquote p:first-child {
   border-radius: 50%;
   display: table-cell;
   vertical-align: top;
+  margin-right: 30px;
 }
 
 /* ======================
@@ -266,6 +267,15 @@ blockquote p:first-child {
 
 .team-member {
   display: table;
+}
+
+.team-member-role {
+  margin-bottom: 25px;
+}
+
+.team-member-description {
+  font: normal .8em $robot;
+  line-height: 20px;
 }
 
 /* ======================
