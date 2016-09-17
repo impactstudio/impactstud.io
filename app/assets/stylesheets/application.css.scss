@@ -18,6 +18,7 @@ MENU:
 1.0 DEFAULT
   1.1 VARIABLES
 2.0 NAVIGATION
+2.1 SOCIAL
 3.0 GENERAL
 3.1 REUSABLES
 4.0 HOME - HERO
@@ -35,6 +36,7 @@ MENU:
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import 'https://fonts.googleapis.com/css?family=Roboto:400,700';
+@import 'font-awesome';
 
 @font-face {
   font-family: 'AmericanTypewriter';
@@ -115,6 +117,30 @@ body, html {
   .navigation li {
     font-size: 1.2em;
   }
+}
+
+/* ======================
+  2.1 SOCIAL
+====================== */
+
+.social-icons {
+  background-color: $tangerine;
+  font-size: 6em;
+}
+
+.social-icon-link {
+  color: #333;
+  transition: $ease-out;
+}
+
+.social-icon-link:hover {
+  color: $sky;
+  transition: $ease-in;
+}
+
+.social-icon-wrapper {
+  display: inline-block;
+  width: 18%;
 }
 
 /* ======================
