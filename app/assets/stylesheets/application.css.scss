@@ -111,6 +111,12 @@ body, html {
   color: $tangerine;
 }
 
+@media (max-width: 434px) {
+  .navigation li {
+    font-size: 1.2em;
+  }
+}
+
 /* ======================
 3.0 GENERAL
 ====================== */
@@ -233,6 +239,47 @@ blockquote p:first-child {
               0px 0px 3px 3px rgba(51, 51, 51, 0.7);
 }
 
+@media (max-width: 845px) {
+  .impact_logo {
+    width: 560px;
+  }
+
+  .headline {
+    font-size: 1.0em;
+  }
+}
+
+@media (max-width: 645px) {
+  .impact_logo {
+    width: 480px;
+  }
+}
+
+@media (max-width: 530px) {
+  .impact_logo {
+    width: 363px;
+    margin-bottom: 0;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .navigation ul {
+    text-align: center;
+  }
+
+  .headline {
+    text-align: center;
+  }
+}
+
+@media (max-width: 373px) {
+  .impact_logo {
+    width: 310px;
+  }
+}
+
 /* ======================
 4.2 HOME - BIO
 ====================== */
@@ -289,6 +336,20 @@ blockquote p:first-child {
 .team-member-description {
   font: normal .8em $robot;
   line-height: 20px;
+}
+
+@media (max-width: 1439px) {
+  .team-member-wrapper {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .thumbnail {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }
 
 /* ======================
