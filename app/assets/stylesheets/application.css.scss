@@ -241,6 +241,8 @@ blockquote p:first-child {
   height: 173px;
   width: 173px;
   border-radius: 50%;
+  display: table-cell;
+  vertical-align: top;
 }
 
 /* ======================
@@ -254,6 +256,16 @@ blockquote p:first-child {
   background-position: center bottom;
   background-repeat: repeat-x;
   background-size: contain;
+}
+
+.team-member-wrapper {
+  width: 73%;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.team-member {
+  display: table;
 }
 
 /* ======================
