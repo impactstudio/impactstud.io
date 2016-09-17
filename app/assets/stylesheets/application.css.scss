@@ -24,6 +24,8 @@ MENU:
 4.1 HOME - BIO
 4.2 HOME - TEAM
 4.3 HOME - REVIEWS
+4.4 HOME - PROJECTS
+4.5
 ********************/
 
 /* ======================
@@ -260,4 +262,12 @@ blockquote p:first-child {
 
 .reviews {
   background-color: $teal;
+}
+
+/* ======================
+4.5 HOME - PROJECTS
+====================== */
+
+.projects {
+  background-color: $cream;
 }
