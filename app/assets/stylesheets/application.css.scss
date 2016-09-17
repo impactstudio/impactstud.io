@@ -134,7 +134,7 @@ h3 {
 blockquote {
   border: none;
   font-size: 2em;
-  margin: 1.5em 10px;
+  margin: 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }
@@ -248,6 +248,10 @@ blockquote p:first-child {
 .team {
   background-color: $tangerine;
   color: $cream;
+  background-image: image-url("bg_palette-border.jpg");
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  background-size: contain;
 }
 
 /* ======================
