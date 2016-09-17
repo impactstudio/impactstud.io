@@ -66,6 +66,10 @@ $smoke: #878888;
 $sky: #00cbdd;
 $cream: CornSilk;
 $teal: #47a6a6;
+$fbBlue: #3b5998;
+$liBlue: #0077B5;
+$twBlue: #1DA1F2;
+$gRed: #d34836;
 $typewriter: "AmericanTypewriter", Courier, 'Courier New';
 $lightTypewriter: 'AmericanTypewriterLight', Courier, 'Courier New';
 $robot: 'Roboto', sans-serif;
@@ -134,13 +138,32 @@ body, html {
 }
 
 .social-icon-link:hover {
-  color: $sky;
   transition: $ease-in;
+}
+
+.github-link:hover {
+  color: black;
+}
+
+.facebook-link:hover {
+  color: $fbBlue;
+}
+
+.linkedin-link:hover {
+  color: $liBlue;
+}
+
+.google-link:hover {
+  color: $gRed;
+}
+
+.twitter-link:hover {
+  color: $twBlue;
 }
 
 .social-icon-wrapper {
   display: inline-block;
-  width: 18%;
+  width: 17%;
 }
 
 /* ======================
