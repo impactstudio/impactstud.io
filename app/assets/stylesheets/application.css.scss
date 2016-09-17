@@ -295,6 +295,7 @@ blockquote p:first-child {
   display: block;
   margin: 0 auto;
   width: 60%;
+  margin-bottom: 60px;
 }
 
 .thumbnail {
@@ -304,6 +305,18 @@ blockquote p:first-child {
   display: table-cell;
   vertical-align: top;
   margin-right: 30px;
+}
+
+@media (max-width: 1870px) {
+  .bio-image {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1670px) {
+  .bio-image {
+    width: 82%;
+  }
 }
 
 /* ======================
