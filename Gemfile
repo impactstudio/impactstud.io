@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'pundit'
+gem 'devise'
+gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'slim'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

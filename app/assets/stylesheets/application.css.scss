@@ -1,0 +1,273 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ */
+
+/*******************
+MENU:
+!!! media queries included in each section (if applicable)
+1.0 DEFAULT
+  1.1 VARIABLES
+2.0 NAVIGATION
+3.0 GENERAL
+3.1 REUSABLES
+4.0 HOME - HERO
+4.1 HOME - BIO
+4.2 HOME - TEAM
+4.3 HOME - REVIEWS
+4.4 HOME - PROJECTS
+4.5
+********************/
+
+/* ======================
+1.0 DEFAULT
+====================== */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,700';
+
+@font-face {
+  font-family: 'AmericanTypewriter';
+  src: asset-url('american-typewriter.eot');
+  src: asset-url('american-typewriter.eot') format('eot'),
+  asset-url('american-typewriter.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AmericanTypewriterLight';
+  src: asset-url('american-typewriter-light.eot');
+  src: asset-url('american-typewriter-light.eot') format('eot'),
+  asset-url('american-typewriter-light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ======================
+1.1 VARIABLES
+====================== */
+
+$tangerine: #f27022;
+$pumpkin: #fd9846;
+$smoke: #878888;
+$sky: #00cbdd;
+$cream: CornSilk;
+$teal: #47a6a6;
+$typewriter: "AmericanTypewriter", Courier, 'Courier New';
+$lightTypewriter: 'AmericanTypewriterLight', Courier, 'Courier New';
+$robot: 'Roboto', sans-serif;
+$ease-in: ease-in .3s;
+$ease-out: ease-out .3s;
+
+/* ======================
+2.0 NAVIGATION
+====================== */
+
+.navigation {
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+.navigation li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 1.5em;
+}
+
+.navigation li:after {
+  content: "//";
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navigation li:last-child:after {
+  content: "";
+}
+
+.navigation li a {
+  color: black;
+}
+
+.navigation li a.active {
+  color: $tangerine;
+}
+
+/* ======================
+3.0 GENERAL
+====================== */
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font: normal 17px $typewriter;
+}
+
+p {
+  line-height: 25px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 2.0em;
+  text-align: center;
+  font-family: $typewriter;
+  margin: 0 0 40px 0;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+blockquote {
+  border: none;
+  font-size: 2em;
+  margin: 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 9.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  line-height: 37px;
+}
+
+blockquote p:first-child {
+  color: $smoke;
+  font-family: $lightTypewriter;
+}
+
+/* ======================
+3.1 REUSABLES
+====================== */
+
+.content-wrapper {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.headline {
+  font-size: 1.2em;
+}
+
+.section-big-fuckin-dick {
+  font-size: 5.2em;
+  font-family: $lightTypewriter;
+  margin-bottom: 50px;
+}
+
+/* ======================
+4.1 HOME - HERO
+====================== */
+
+.hero {
+    background-image: image-url("impact_studio_hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hero-wrapper {
+  margin-bottom: 218px;
+  margin-top: 118px;
+}
+
+.impact_logo {
+  height: 83px;
+  width: 670px;
+  margin-bottom: 20px;
+}
+
+.project_button {
+  background-color: $tangerine;
+  color: white;
+  border: 3px solid white;
+  box-shadow: 0px 0px 0px 3px $sky,
+              0px 0px 3px 3px rgba(51, 51, 51, 0.7);
+  text-transform: uppercase;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 1.3em;
+  transition: $ease-out;
+}
+
+.project_button:hover {
+  background-color: $sky;
+  transition: $ease-in;
+  box-shadow: 0px 0px 0px 3px $tangerine,
+              0px 0px 3px 3px rgba(51, 51, 51, 0.7);
+}
+
+/* ======================
+4.2 HOME - BIO
+====================== */
+
+.bio {
+  background-color: $pumpkin;
+  color: $cream;
+  font-family: $robot;
+  text-shadow: 1px 1px 1px #333;
+}
+
+.bio-image {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.thumbnail {
+  height: 173px;
+  width: 173px;
+  border-radius: 50%;
+}
+
+/* ======================
+4.3 HOME - TEAM
+====================== */
+
+.team {
+  background-color: $tangerine;
+  color: $cream;
+  background-image: image-url("bg_palette-border.jpg");
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+
+/* ======================
+4.4 HOME - REVIEWS
+====================== */
+
+.reviews {
+  background-color: $teal;
+}
+
+/* ======================
+4.5 HOME - PROJECTS
+====================== */
+
+.projects {
+  background-color: $cream;
+}

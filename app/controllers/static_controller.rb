@@ -16,4 +16,7 @@ class StaticController < ApplicationController
 
   def start_a_project
   end
+
+  def portfolio
+  end
 end
