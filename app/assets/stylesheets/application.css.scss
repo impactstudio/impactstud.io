@@ -133,6 +133,10 @@ h3 {
   margin-top: 0;
 }
 
+ul {
+  padding-left: 0;
+}
+
 blockquote {
   border: none;
   font-size: 2em;
@@ -234,7 +238,7 @@ blockquote p:first-child {
 .bio-image {
   display: block;
   margin: 0 auto;
-  width: 90%;
+  width: 60%;
 }
 
 .thumbnail {
