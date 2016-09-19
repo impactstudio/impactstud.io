@@ -93,6 +93,10 @@ body, html {
   margin-bottom: 30px;
 }
 
+.col-md-4 {
+  z-index: 1;
+}
+
 .navigation li {
   list-style-type: none;
   display: inline-block;
@@ -167,11 +171,19 @@ body, html {
 
 .footer {
   background-color: $sky;
-  background-image: image-url("bg_impactstudio-fist.svg");
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-size: 38%;
   position: relative;
+  height: 520px;
+}
+
+.footer-image {
+  z-index: 0;
+}
+
+.footer-image img {
+  height: 520px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .footer-header {
@@ -181,6 +193,7 @@ body, html {
 
 .contact-form {
   margin: 0 auto;
+  z-index: 1;
 }
 
 .contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="phone"] {
@@ -460,9 +473,15 @@ blockquote p:first-child {
 5.0 MEDIA QUERIES
 ====================== */
 
-@media (max-width: 434px) {
-  .navigation li {
-    font-size: 1.2em;
+@media (max-width: 1870px) {
+  .bio-image {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1670px) {
+  .bio-image {
+    width: 82%;
   }
 }
 
@@ -477,24 +496,6 @@ blockquote p:first-child {
     display: block;
     margin: 0 auto;
     margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 1870px) {
-  .bio-image {
-    width: 70%;
-  }
-}
-
-@media (max-width: 1670px) {
-  .bio-image {
-    width: 82%;
-  }
-}
-
-@media (max-width: 373px) {
-  .impact_logo {
-    width: 310px;
   }
 }
 
@@ -530,5 +531,17 @@ blockquote p:first-child {
 
   .headline {
     text-align: center;
+  }
+}
+
+@media (max-width: 434px) {
+  .navigation li {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 373px) {
+  .impact_logo {
+    width: 310px;
   }
 }
