@@ -14,7 +14,6 @@
 
 /*******************
 MENU:
-!!! media queries included in each section (if applicable)
 1.0 DEFAULT
   1.1 VARIABLES
 2.0 NAVIGATION
@@ -27,6 +26,7 @@ MENU:
 4.2 HOME - TEAM
 4.3 HOME - REVIEWS
 4.4 HOME - PROJECTS
+5.0 MEDIA QUERIES
 ********************/
 
 /* ======================
@@ -115,12 +115,6 @@ body, html {
 
 .navigation li a.active {
   color: $tangerine;
-}
-
-@media (max-width: 434px) {
-  .navigation li {
-    font-size: 1.2em;
-  }
 }
 
 /* ======================
@@ -387,47 +381,6 @@ blockquote p:first-child {
               0px 0px 3px 3px rgba(51, 51, 51, 0.7);
 }
 
-@media (max-width: 845px) {
-  .impact_logo {
-    width: 560px;
-  }
-
-  .headline {
-    font-size: 1.0em;
-  }
-}
-
-@media (max-width: 645px) {
-  .impact_logo {
-    width: 480px;
-  }
-}
-
-@media (max-width: 530px) {
-  .impact_logo {
-    width: 363px;
-    margin-bottom: 0;
-  }
-
-  h1 {
-    text-align: center;
-  }
-
-  .navigation ul {
-    text-align: center;
-  }
-
-  .headline {
-    text-align: center;
-  }
-}
-
-@media (max-width: 373px) {
-  .impact_logo {
-    width: 310px;
-  }
-}
-
 /* ======================
 4.2 HOME - BIO
 ====================== */
@@ -453,18 +406,6 @@ blockquote p:first-child {
   display: table-cell;
   vertical-align: top;
   margin-right: 30px;
-}
-
-@media (max-width: 1870px) {
-  .bio-image {
-    width: 70%;
-  }
-}
-
-@media (max-width: 1670px) {
-  .bio-image {
-    width: 82%;
-  }
 }
 
 /* ======================
@@ -499,20 +440,6 @@ blockquote p:first-child {
   line-height: 20px;
 }
 
-@media (max-width: 1439px) {
-  .team-member-wrapper {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .thumbnail {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-}
-
 /* ======================
 4.4 HOME - REVIEWS
 ====================== */
@@ -527,4 +454,81 @@ blockquote p:first-child {
 
 .projects {
   background-color: $cream;
+}
+
+/* ======================
+5.0 MEDIA QUERIES
+====================== */
+
+@media (max-width: 434px) {
+  .navigation li {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 1439px) {
+  .team-member-wrapper {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .thumbnail {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1870px) {
+  .bio-image {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1670px) {
+  .bio-image {
+    width: 82%;
+  }
+}
+
+@media (max-width: 373px) {
+  .impact_logo {
+    width: 310px;
+  }
+}
+
+@media (max-width: 845px) {
+  .impact_logo {
+    width: 560px;
+  }
+
+  .headline {
+    font-size: 1.0em;
+  }
+}
+
+@media (max-width: 645px) {
+  .impact_logo {
+    width: 480px;
+  }
+}
+
+@media (max-width: 530px) {
+  .impact_logo {
+    width: 363px;
+    margin-bottom: 0;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .navigation ul {
+    text-align: center;
+  }
+
+  .headline {
+    text-align: center;
+  }
 }
