@@ -5,7 +5,7 @@ class StaticController < ApplicationController
   def team
   end
 
-  def studio
+  def services
   end
 
   def start_a_project
