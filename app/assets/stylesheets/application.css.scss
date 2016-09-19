@@ -173,6 +173,10 @@ body, html {
 
 .footer {
   background-color: $sky;
+  background-image: image-url("bg_impactstudio-fist.svg");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 38%;
 }
 
 .footer-header {
