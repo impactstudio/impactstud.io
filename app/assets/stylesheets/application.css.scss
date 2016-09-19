@@ -177,6 +177,7 @@ body, html {
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: 38%;
+  position: relative;
 }
 
 .footer-header {
@@ -210,6 +211,29 @@ body, html {
   background-color: $tangerine;
   transition: $ease-in;
   outline: none;
+}
+
+.footer-links {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+}
+
+.footer-links p {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.footer-links a {
+  margin-right: 10px;
+  color: black;
+  transition: $ease-out;
+}
+
+.footer-links a:hover {
+  color: $pumpkin;
+  transition: $ease-in;
+  font-size: 5.0em;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
