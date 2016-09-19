@@ -17,7 +17,7 @@ MENU:
 1.0 DEFAULT
   1.1 VARIABLES
 2.0 NAVIGATION
-2.1 SOCIAL
+2.1
 2.2 FOOTER
 3.0 GENERAL
 3.1 REUSABLES
@@ -128,6 +128,8 @@ body, html {
 .social-icons {
   background-color: $tangerine;
   font-size: 6em;
+  padding-left: 0;
+  text-align: center;
 }
 
 .social-icon-link {
@@ -224,6 +226,7 @@ body, html {
   position: absolute;
   bottom: 0;
   margin-bottom: 10px;
+  z-index: 1;
 }
 
 .footer-links p {
@@ -499,6 +502,18 @@ blockquote p:first-child {
   }
 }
 
+@media (max-width: 1196px) {
+  .social-icons {
+    font-size: 5em;
+  }
+}
+
+@media (max-width: 930px) {
+  .social-icons {
+    font-size: 4em;
+  }
+}
+
 @media (max-width: 845px) {
   .impact_logo {
     width: 560px;
@@ -512,6 +527,10 @@ blockquote p:first-child {
 @media (max-width: 645px) {
   .impact_logo {
     width: 480px;
+  }
+
+  .social-icons {
+    font-size: 3em;
   }
 }
 
@@ -534,9 +553,13 @@ blockquote p:first-child {
   }
 }
 
-@media (max-width: 434px) {
+@media (max-width: 457px) {
   .navigation li {
     font-size: 1.2em;
+  }
+
+  .social-icons {
+    font-size: 2.0em;
   }
 }
 
