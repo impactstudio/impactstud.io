@@ -508,6 +508,12 @@ blockquote p:first-child {
   }
 }
 
+@media (max-width: 988px) {
+  p {
+    text-align: center;
+  }
+}
+
 @media (max-width: 930px) {
   .social-icons {
     font-size: 4em;
@@ -528,6 +534,16 @@ blockquote p:first-child {
   }
 }
 
+@media (max-width: 670px) {
+  .contact-form input {
+    box-shadow: 1px 1px 3px 0px #333
+  }
+
+  .contact-form input[type="submit"] {
+    background-color: $tangerine;
+  }
+}
+
 @media (max-width: 645px) {
   .impact_logo {
     width: 480px;
@@ -540,21 +556,19 @@ blockquote p:first-child {
   .section-big-title {
     font-size: 3.0em;
   }
-}
 
-@media (max-width: 670px) {
-  .contact-form input {
-    box-shadow: 1px 1px 3px 0px #333
+  blockquote p:first-child {
+    font-size: .8em;
   }
 
-  .contact-form input[type="submit"] {
-    background-color: $tangerine;
+  blockquote:before {
+    font-size: 2em;
   }
 }
 
 @media (max-width: 530px) {
   .impact_logo {
-    width: 355px;
+    width: 349px;
     margin-bottom: 0;
   }
 
@@ -564,6 +578,10 @@ blockquote p:first-child {
 
   .navigation ul {
     text-align: center;
+  }
+
+  .navigation li {
+    margin-bottom: 10px;
   }
 
   .headline {

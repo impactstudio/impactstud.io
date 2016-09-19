@@ -4,6 +4,7 @@
   <title>ImpactstudIo</title>
   <meta name="viewport" content="width=device-width" />
   <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= favicon_link_tag 'favicon.ico' %>
 </head>
 <body>
@@ -16,7 +17,7 @@
 <% if current_user %>
   <%= link_to "Logout", destroy_user_session_path, method: "delete" %>
 <% end %>
-<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>
 </html>
