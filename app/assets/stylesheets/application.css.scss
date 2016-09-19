@@ -17,8 +17,9 @@ MENU:
 1.0 DEFAULT
   1.1 VARIABLES
 2.0 NAVIGATION
-2.1
+2.1 SOCIAL
 2.2 FOOTER
+2.3 HEADER
 3.0 GENERAL
 3.1 REUSABLES
 4.0 HOME - HERO
@@ -268,6 +269,24 @@ body, html {
 .contact-form input[type="submit"]:hover {
   transition: $ease-in;
   background-color: $tangerine;
+}
+
+/* ======================
+2.4 HEADER
+====================== */
+
+.header {
+  background-color: $teal;
+  padding-top: 26px;
+}
+
+.header-logo {
+  height: 35px;
+  width: 234px;
+}
+
+.header-navigation {
+  float: right;
 }
 
 /* ======================
