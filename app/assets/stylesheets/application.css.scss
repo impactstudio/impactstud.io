@@ -1,0 +1,641 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ */
+
+/*******************
+MENU:
+1.0 DEFAULT
+  1.1 VARIABLES
+2.0 NAVIGATION
+2.1 SOCIAL
+2.2 FOOTER
+2.3 HEADER
+3.0 GENERAL
+3.1 REUSABLES
+4.0 HOME - HERO
+4.1 HOME - BIO
+4.2 HOME - TEAM
+4.3 HOME - REVIEWS
+4.4 HOME - PROJECTS
+5.0 MEDIA QUERIES
+********************/
+
+/* ======================
+1.0 DEFAULT
+====================== */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,700';
+@import 'font-awesome';
+
+@font-face {
+  font-family: 'AmericanTypewriter';
+  src: asset-url('american-typewriter.eot');
+  src: asset-url('american-typewriter.eot') format('eot'),
+  asset-url('american-typewriter.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AmericanTypewriterLight';
+  src: asset-url('american-typewriter-light.eot');
+  src: asset-url('american-typewriter-light.eot') format('eot'),
+  asset-url('american-typewriter-light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ======================
+1.1 VARIABLES
+====================== */
+
+$tangerine: #f27022;
+$pumpkin: #fd9846;
+$smoke: #474e5e;
+$sky: #00cbdd;
+$cream: CornSilk;
+$teal: #47a6a6;
+$fbBlue: #3b5998;
+$liBlue: #0077B5;
+$twBlue: #1DA1F2;
+$gRed: #d34836;
+$typewriter: "AmericanTypewriter", Courier, 'Courier New';
+$lightTypewriter: 'AmericanTypewriterLight', Courier, 'Courier New';
+$robot: 'Roboto', sans-serif;
+$ease-in: ease-in .3s;
+$ease-out: ease-out .3s;
+
+/* ======================
+2.0 NAVIGATION
+====================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+}
+
+.navigation {
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+.col-md-4 {
+  z-index: 1;
+}
+
+.navigation li {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 1.5em;
+}
+
+.navigation li:after {
+  content: "//";
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navigation li:last-child:after {
+  content: "";
+}
+
+.navigation li a {
+  color: #333;
+}
+
+.navigation li a.active {
+  color: $tangerine;
+}
+
+/* ======================
+  2.1 SOCIAL
+====================== */
+
+.social-icons {
+  background-color: $tangerine;
+  font-size: 6em;
+  padding-left: 0;
+  text-align: center;
+}
+
+.social-icon-link {
+  color: $smoke;
+  transition: $ease-out;
+}
+
+.social-icon-link:hover {
+  transition: $ease-in;
+}
+
+.github-link:hover {
+  color: black;
+}
+
+.facebook-link:hover {
+  color: $fbBlue;
+}
+
+.linkedin-link:hover {
+  color: $liBlue;
+}
+
+.google-link:hover {
+  color: $gRed;
+}
+
+.twitter-link:hover {
+  color: $twBlue;
+}
+
+.social-icon-wrapper {
+  display: inline-block;
+  width: 17%;
+  margin-top: 12px;
+}
+
+/* ======================
+2.2 FOOTER
+====================== */
+
+.footer {
+  background-color: $sky;
+  position: relative;
+  height: 520px;
+}
+
+.footer-image {
+  z-index: 0;
+}
+
+.footer-image img {
+  height: 520px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.footer-header {
+  text-align: center;
+  font-family: $lightTypewriter;
+}
+
+.contact-form {
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="phone"] {
+  width: 100%;
+}
+
+.contact-form input {
+  padding-left: 10px;
+  display: block;
+  border: solid $cream 2px;
+  margin: 20px 0;
+  background-color: $pumpkin;
+  color: $cream;
+  border-radius: 5px;
+  font-family: $robot;
+  font-weight: 300;
+  font-size: 1.2em;
+  transition: $ease-out;
+}
+
+.contact-form input:focus {
+  background-color: $tangerine;
+  transition: $ease-in;
+  outline: none;
+}
+
+.footer-links {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+
+.footer-links p {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.footer-links a {
+  margin-right: 10px;
+  color: black;
+  transition: $ease-out;
+}
+
+.footer-links a:hover {
+  color: $pumpkin;
+  transition: $ease-in;
+  font-size: 5.0em;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $cream;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $cream;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $cream;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $cream;
+}
+
+.contact-form input[type="submit"] {
+  border: none;
+  padding: 5px 10px;
+  transition: $ease-out;
+}
+
+.contact-form input[type="submit"]:hover {
+  transition: $ease-in;
+  background-color: $tangerine;
+}
+
+/* ======================
+2.4 HEADER
+====================== */
+
+.header {
+  background-color: $teal;
+  padding-top: 26px;
+}
+
+.header-logo {
+  height: 35px;
+  width: 234px;
+}
+
+.header-navigation {
+  float: right;
+}
+
+/* ======================
+3.0 GENERAL
+====================== */
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font: normal 17px $typewriter;
+}
+
+p {
+  line-height: 25px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 2.0em;
+  text-align: center;
+  font-family: $typewriter;
+  margin: 0 0 40px 0;
+  letter-spacing: 2px;
+}
+
+h3 {
+  margin-top: 0;
+  letter-spacing: 4px;
+}
+
+h4 {
+  letter-spacing: 2px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+blockquote {
+  border: none;
+  font-size: 2em;
+  margin: 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  // margin-right: 9.25em THIS BITCH;
+  vertical-align: -0.4em;
+  float: left;
+}
+
+blockquote p {
+  line-height: 37px;
+}
+
+blockquote p:first-child {
+  color: $smoke;
+  font-family: $lightTypewriter;
+}
+
+/* ======================
+3.1 REUSABLES
+====================== */
+
+.content-wrapper {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.headline {
+  font-size: 1.2em;
+}
+
+.section-big-title {
+  font-size: 4.4em;
+  font-family: $lightTypewriter;
+  margin-bottom: 50px;
+}
+
+/* ======================
+4.1 HOME - HERO
+====================== */
+
+.hero {
+    background-image: image-url("impact_studio_hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.hero-wrapper {
+  margin-bottom: 218px;
+  margin-top: 118px;
+}
+
+.impact_logo {
+  height: 83px;
+  width: 670px;
+  margin-bottom: 20px;
+}
+
+.project_button {
+  background-color: $tangerine;
+  color: $cream;
+  border: 3px solid $cream;
+  box-shadow: 0px 0px 0px 3px $sky,
+              0px 0px 3px 3px rgba(51, 51, 51, 0.7);
+  text-transform: uppercase;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 1.3em;
+  transition: $ease-out;
+}
+
+.project_button:hover {
+  background-color: $sky;
+  transition: $ease-in;
+  box-shadow: 0px 0px 0px 3px $tangerine,
+              0px 0px 3px 3px rgba(51, 51, 51, 0.7);
+}
+
+/* ======================
+4.2 HOME - BIO
+====================== */
+
+.bio {
+  background-color: $pumpkin;
+  color: $cream;
+  font-family: $robot;
+  text-shadow: 1px 1px 1px #333;
+}
+
+.bio-image {
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  margin-bottom: 60px;
+}
+
+.thumbnail {
+  height: 173px;
+  width: 173px;
+  border-radius: 50%;
+  display: table-cell;
+  vertical-align: top;
+  margin-right: 30px;
+}
+
+/* ======================
+4.3 HOME - TEAM
+====================== */
+
+.team {
+  background-color: $tangerine;
+  color: $cream;
+  background-image: image-url("bg_palette-border.jpg");
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  background-size: contain;
+}
+
+.team-member-wrapper {
+  width: 73%;
+  display: table-cell;
+  vertical-align: top;
+}
+
+.team-member {
+  display: table;
+}
+
+.team-member-role {
+  margin-bottom: 25px;
+}
+
+.team-member-description {
+  font: normal .8em $robot;
+  line-height: 20px;
+}
+
+/* ======================
+4.4 HOME - REVIEWS
+====================== */
+
+.reviews {
+  background-color: $teal;
+}
+
+/* ======================
+4.5 HOME - PROJECTS
+====================== */
+
+.projects {
+  background-color: $cream;
+}
+
+/* ======================
+5.0 MEDIA QUERIES
+====================== */
+
+@media (max-width: 1870px) {
+  .bio-image {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1670px) {
+  .bio-image {
+    width: 82%;
+  }
+}
+
+@media (max-width: 1439px) {
+  .team-member-wrapper {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .thumbnail {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1196px) {
+  .social-icons {
+    font-size: 5em;
+  }
+}
+
+@media (max-width: 988px) {
+  p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 930px) {
+  .social-icons {
+    font-size: 4em;
+  }
+
+  .section-big-title {
+    font-size: 4.0em;
+  }
+}
+
+@media (max-width: 845px) {
+  .impact_logo {
+    width: 560px;
+  }
+
+  .headline {
+    font-size: 1.0em;
+  }
+}
+
+@media (max-width: 670px) {
+  .contact-form input {
+    box-shadow: 1px 1px 3px 0px #333
+  }
+
+  .contact-form input[type="submit"] {
+    background-color: $tangerine;
+  }
+}
+
+@media (max-width: 645px) {
+  .impact_logo {
+    width: 480px;
+  }
+
+  .social-icons {
+    font-size: 3em;
+  }
+
+  .section-big-title {
+    font-size: 3.0em;
+  }
+
+  blockquote p:first-child {
+    font-size: .8em;
+  }
+
+  blockquote:before {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 530px) {
+  .impact_logo {
+    width: 349px;
+    margin-bottom: 0;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .navigation ul {
+    text-align: center;
+  }
+
+  .navigation li {
+    margin-bottom: 10px;
+  }
+
+  .headline {
+    text-align: center;
+  }
+
+  .footer-links p {
+    display: block;
+  }
+
+  .footer-links a {
+    margin-left: 15px;
+  }
+
+  .footer-links a:last-child {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 489px) {
+  .navigation li {
+    font-size: 1.2em;
+  }
+
+  .social-icons {
+    font-size: 2.0em;
+  }
+
+  .section-big-title {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 373px) {
+  .impact_logo {
+    width: 293px;
+  }
+}
