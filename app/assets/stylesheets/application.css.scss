@@ -66,6 +66,7 @@ $tangerine: #f27022;
 $pumpkin: #fd9846;
 $smoke: #474e5e;
 $sky: #00cbdd;
+$cloudy: #f1f1f1;
 $cream: CornSilk;
 $teal: #47a6a6;
 $fbBlue: #3b5998;
@@ -520,7 +521,7 @@ blockquote p:first-child {
 }
 
 .responsive-text {
-  background: $cream;
+  background: $cloudy;
 }
 
 /* ======================
@@ -535,6 +536,10 @@ blockquote p:first-child {
   height: 405px;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.seo-text {
+  background: $cloudy;
 }
 
 /* ======================
