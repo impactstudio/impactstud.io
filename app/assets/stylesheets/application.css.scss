@@ -28,6 +28,8 @@ MENU:
 4.3 HOME - REVIEWS
 4.4 HOME - PROJECTS
 5.0 SERVICES - RESPONSIVE
+5.1 SERVICES - SEO
+5.2 SERVICES - PHOTOGRAPHY
 6.0 MEDIA QUERIES
 ********************/
 
@@ -69,6 +71,7 @@ $sky: #00cbdd;
 $cloudy: #f1f1f1;
 $cream: CornSilk;
 $teal: #47a6a6;
+$grey: #a8a8a8;
 $fbBlue: #3b5998;
 $liBlue: #0077B5;
 $twBlue: #1DA1F2;
@@ -539,6 +542,24 @@ blockquote p:first-child {
 }
 
 .seo-text {
+  background: $cloudy;
+}
+
+/* ======================
+5.2 SERVICES - PHOTOGRAPHY
+====================== */
+
+.photography {
+  background: $grey;
+}
+
+.photography-image {
+  height: 409px;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+
+.photography-text {
   background: $cloudy;
 }
 
