@@ -27,7 +27,8 @@ MENU:
 4.2 HOME - TEAM
 4.3 HOME - REVIEWS
 4.4 HOME - PROJECTS
-5.0 MEDIA QUERIES
+5.0 SERVICES - RESPONSIVE
+6.0 MEDIA QUERIES
 ********************/
 
 /* ======================
@@ -374,6 +375,21 @@ blockquote p:first-child {
   margin-bottom: 50px;
 }
 
+.center-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.sub-section-big-title {
+  font-size: 3.4em;
+  font-family: $lightTypewriter;
+  margin-bottom: 50px;
+}
+
 /* ======================
 4.1 HOME - HERO
 ====================== */
@@ -492,7 +508,37 @@ blockquote p:first-child {
 }
 
 /* ======================
-5.0 MEDIA QUERIES
+5.0 SERVICES - RESPONSIVE
+====================== */
+
+.responsive {
+  background: $pumpkin;
+}
+
+.responsive-image {
+  height: 434px;
+}
+
+.responsive-text {
+  background: $cream;
+}
+
+/* ======================
+5.1 SERVICES - SEO
+====================== */
+
+.seo {
+  background: $teal;
+}
+
+.seo-image {
+  height: 405px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* ======================
+6.0 MEDIA QUERIES
 ====================== */
 
 @media (max-width: 1870px) {
