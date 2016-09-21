@@ -7,6 +7,36 @@
         <%= render 'shared/errors', object: @project %>
 
         <div class="form-group">
+          <%= f.label :main_image %>
+          <%= f.file_field :main_image, class: 'form-control'%>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :mobile_image %>
+          <%= f.file_field :mobile_image, class: 'form-control'%>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :desktop_image %>
+          <%= f.file_field :desktop_image, class: 'form-control'%>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :logo %>
+          <%= f.file_field :logo, class: 'form-control'%>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :tablet %>
+          <%= f.file_field :tablet, class: 'form-control'%>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :phone %>
+          <%= f.file_field :phone, class: 'form-control'%>
+        </div>
+
+        <div class="form-group">
           <%= f.label :title %>
           <%= f.text_field :title, class: 'form-control' %>
         </div>
