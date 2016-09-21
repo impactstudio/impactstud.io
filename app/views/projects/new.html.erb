@@ -16,7 +16,7 @@
           <%= f.text_area :description, class: 'form-control' %>
         </div>
 
-        <%= f.fields_for :clients do |client_field| %>
+        <%= f.fields_for @project.clients.build do |client_field| %>
 
         <h4>Client</h4>
 
@@ -45,7 +45,7 @@
           <div class="col-md-6">
             <div class="form-group">
               <%= client_field.label :phone_number %>
-              <%= client_field.text_field :phone_number, class: 'form-control' %>
+              <%= client_field.phone_field :phone_number, class: 'form-control' %>
             </div>
           </div>
 
@@ -65,6 +65,7 @@
         </div>
 
         <% end %>
+        <%= f.submit "Add Project" %>
       <% end %>
     </div>
   </div>

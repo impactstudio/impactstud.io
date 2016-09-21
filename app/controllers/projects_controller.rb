@@ -9,11 +9,11 @@ class ProjectsController < ApplicationController
 
   def new
     @project = Project.new
-    @project.clients.build
     authorize @project
   end
 
   def create
+    @project = Project.create(project_params)
     if @project.save
       redirect_to root_path
     else
