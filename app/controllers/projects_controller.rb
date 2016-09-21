@@ -12,6 +12,15 @@ class ProjectsController < ApplicationController
     authorize @project
   end
 
+  def create
+    @project = Project.create(project_params)
+    if @project.save
+      redirect_to root_path
+    else
+      render 'new'
+    end
+  end
+
   def edit
     authorize @project
   end
@@ -22,7 +31,7 @@ class ProjectsController < ApplicationController
     @project = Project.find(params[:id])
   end
 
-  def post_params
-    params.require(:project).permit()
+  def project_params
+    params.require(:project).permit(:title, :description, :main_image, :mobile_image, :desktop_image, :logo, :tablet, :phone, clients_attributes: [:first_name, :last_name, :email, :phone_number, :business_name, :description])
   end
 end
