@@ -15,6 +15,17 @@
           <%= f.label :description %>
           <%= f.text_area :description, class: 'form-control' %>
         </div>
+
+        <%= f.fields_for :clients do |client_field| %>
+
+        <h4>Client</h4>
+
+        <div class="form-group">
+          <%= client_field.label :first_name %>
+          <%= client_field.text_area :first_name, class: 'form-control' %>
+        </div>
+
+        <% end %>
       <% end %>
     </div>
   </div>

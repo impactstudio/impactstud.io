@@ -9,7 +9,16 @@ class ProjectsController < ApplicationController
 
   def new
     @project = Project.new
+    @project.clients.build
     authorize @project
+  end
+
+  def create
+    if @project.save
+      redirect_to root_path
+    else
+      render 'new'
+    end
   end
 
   def edit
@@ -22,7 +31,7 @@ class ProjectsController < ApplicationController
     @project = Project.find(params[:id])
   end
 
-  def post_params
+  def project_params
     params.require(:project).permit(:title, :description)
   end
 end
