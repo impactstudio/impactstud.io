@@ -388,6 +388,10 @@ figure {
 3.1 REUSABLES
 ====================== */
 
+.full-width-block {
+  width: 100%;
+}
+
 .content-wrapper {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -749,6 +753,9 @@ figure {
   .project {
     border: 2px solid $grey;
     margin-bottom: 30px;
+  }
+  .project:nth-child(3n) {
+    border-right: 2px solid $grey;
   }
 }
 
