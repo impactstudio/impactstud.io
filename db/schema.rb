@@ -33,32 +33,8 @@ ActiveRecord::Schema.define(version: 20160921193647) do
     t.text     "description"
     t.integer  "testimonial_id"
     t.integer  "client_id"
-    t.datetime "created_at",                    null: false
-    t.datetime "updated_at",                    null: false
-    t.string   "main_image_file_name"
-    t.string   "main_image_content_type"
-    t.integer  "main_image_file_size"
-    t.datetime "main_image_updated_at"
-    t.string   "mobile_image_one_file_name"
-    t.string   "mobile_image_one_content_type"
-    t.integer  "mobile_image_one_file_size"
-    t.datetime "mobile_image_one_updated_at"
-    t.string   "desktop_image_file_name"
-    t.string   "desktop_image_content_type"
-    t.integer  "desktop_image_file_size"
-    t.datetime "desktop_image_updated_at"
-    t.string   "logo_file_name"
-    t.string   "logo_content_type"
-    t.integer  "logo_file_size"
-    t.datetime "logo_updated_at"
-    t.string   "tablet_file_name"
-    t.string   "tablet_content_type"
-    t.integer  "tablet_file_size"
-    t.datetime "tablet_updated_at"
-    t.string   "phone_file_name"
-    t.string   "phone_content_type"
-    t.integer  "phone_file_size"
-    t.datetime "phone_updated_at"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
   create_table "testimonials", force: :cascade do |t|
