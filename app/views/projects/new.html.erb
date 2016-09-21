@@ -20,9 +20,48 @@
 
         <h4>Client</h4>
 
-        <div class="form-group">
-          <%= client_field.label :first_name %>
-          <%= client_field.text_area :first_name, class: 'form-control' %>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group">
+              <%= client_field.label :first_name %>
+              <%= client_field.text_field :first_name, class: 'form-control' %>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <%= client_field.label :last_name %>
+              <%= client_field.text_field :last_name, class: 'form-control' %>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <%= client_field.label :email %>
+              <%= client_field.text_field :email, class: 'form-control' %>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+              <%= client_field.label :phone_number %>
+              <%= client_field.text_field :phone_number, class: 'form-control' %>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+              <%= client_field.label :business_name %>
+              <%= client_field.text_field :business_name, class: 'form-control' %>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="form-group">
+              <%= client_field.label :description %>
+              <%= client_field.text_area :description, class: 'form-control' %>
+            </div>
+          </div>
         </div>
 
         <% end %>
