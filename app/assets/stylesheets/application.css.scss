@@ -367,6 +367,14 @@ blockquote p:first-child {
   font-family: $lightTypewriter;
 }
 
+a {
+  color: $pumpkin;
+}
+
+a:hover {
+  color: $tangerine;
+}
+
 /* ======================
 3.1 REUSABLES
 ====================== */
@@ -593,8 +601,16 @@ blockquote p:first-child {
 6.2 TEAM - TEAM MEMBERS
 ====================== */
 
+.team-member-links {
+  margin-bottom: 33px;
+}
+
 .team-member-link {
   margin-bottom: 10px;
+}
+
+.team-member-personal-website {
+  color: $sky;
 }
 
 /* ======================
