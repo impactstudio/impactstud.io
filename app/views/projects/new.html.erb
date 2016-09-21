@@ -7,12 +7,12 @@
         <%= render 'shared/errors', object: @project %>
 
         <div class="form-group">
-          <%= f.label :main_image %>
+          <%= f.label "Main Wireframe Image" %>
           <%= f.file_field :main_image, class: 'form-control'%>
         </div>
 
         <div class="form-group">
-          <%= f.label :mobile_image %>
+          <%= f.label "Mobile Wireframe Image" %>
           <%= f.file_field :mobile_image, class: 'form-control'%>
         </div>
 
@@ -22,18 +22,18 @@
         </div>
 
         <div class="form-group">
-          <%= f.label :logo %>
-          <%= f.file_field :logo, class: 'form-control'%>
-        </div>
-
-        <div class="form-group">
-          <%= f.label :tablet %>
+          <%= f.label "Tablet Image" %>
           <%= f.file_field :tablet, class: 'form-control'%>
         </div>
 
         <div class="form-group">
-          <%= f.label :phone %>
+          <%= f.label "Phone Image" %>
           <%= f.file_field :phone, class: 'form-control'%>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :logo %>
+          <%= f.file_field :logo, class: 'form-control'%>
         </div>
 
         <div class="form-group">
