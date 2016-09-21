@@ -11,11 +11,7 @@
       </form>
     </div>
 
-    <div class="footer-links">
-      <p>&copy; <%= Time.now.strftime("%Y") %> impactstud.io LLC</p>
-      <%= link_to "Privacy", "" %>
-      <%= link_to "Site Map", " " %>
-    </div>
+    <%= render partial:"layouts/footer_links" %>
 
     <div class="footer-image">
       <%= image_tag "bg_impactstudio-fist.svg" %>

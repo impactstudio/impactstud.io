@@ -30,7 +30,10 @@ MENU:
 5.0 SERVICES - RESPONSIVE
 5.1 SERVICES - SEO
 5.2 SERVICES - PHOTOGRAPHY
-6.0 MEDIA QUERIES
+6.0 TEAM
+6.1 TEAM - HERO
+6.2 TEAM - TEAM MEMBERS
+7.0 MEDIA QUERIES
 ********************/
 
 /* ======================
@@ -334,6 +337,10 @@ ul {
   padding-left: 0;
 }
 
+li {
+  list-style: none;
+}
+
 blockquote {
   border: none;
   font-size: 2em;
@@ -493,6 +500,7 @@ blockquote p:first-child {
 .team-member-description {
   font: normal .8em $robot;
   line-height: 20px;
+  width: 90%;
 }
 
 /* ======================
@@ -564,7 +572,33 @@ blockquote p:first-child {
 }
 
 /* ======================
-6.0 MEDIA QUERIES
+6.0 TEAM
+====================== */
+
+/* ======================
+6.1 TEAM - HERO
+====================== */
+
+.team-hero {
+  width: 100%;
+  height: 510px;
+  background-color: $pumpkin;
+  background-image: image-url("nerd.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* ======================
+6.2 TEAM - TEAM MEMBERS
+====================== */
+
+.team-member-link {
+  margin-bottom: 10px;
+}
+
+/* ======================
+7.0 MEDIA QUERIES
 ====================== */
 
 @media (max-width: 1870px) {
@@ -622,6 +656,12 @@ blockquote p:first-child {
 
   .headline {
     font-size: 1.0em;
+  }
+}
+
+@media (max-width: 768px) {
+  .first-team-member {
+    padding-bottom: 30px;
   }
 }
 
