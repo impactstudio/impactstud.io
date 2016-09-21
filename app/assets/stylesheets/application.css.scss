@@ -123,10 +123,12 @@ body, html {
 
 .navigation li:last-child:after {
   content: "";
+  padding-right: 0;
 }
 
 .navigation li a {
   color: #333;
+  font-size: .8em;
 }
 
 .navigation li a.active {
@@ -176,7 +178,7 @@ body, html {
 .social-icon-wrapper {
   display: inline-block;
   width: 17%;
-  margin-top: 12px;
+  margin-top: 5px;
 }
 
 /* ======================
@@ -414,12 +416,6 @@ figure {
 
 .center-text {
   text-align: center;
-}
-
-.sub-section-big-title {
-  font-size: 3.4em;
-  font-family: $lightTypewriter;
-  margin-bottom: 50px;
 }
 
 /* ======================
@@ -718,11 +714,24 @@ figure {
   .social-icons {
     font-size: 5em;
   }
+  .header-logo {
+    height: 35px;
+    width: 234px;
+    display: block;
+    margin: 0 auto 30px auto;
+  }
+  .header-navigation {
+    width: 100%;
+    text-align: center;
+    font-size: .85em;
+  }
 }
-
 @media (max-width: 988px) {
   p {
     text-align: center;
+  }
+  .photography-image, .seo-image, .responsive-image {
+    height: 300px;
   }
 }
 
@@ -732,7 +741,7 @@ figure {
   }
 
   .section-big-title {
-    font-size: 4.0em;
+    font-size: 2.5em;
   }
 }
 
@@ -757,6 +766,9 @@ figure {
   .project:nth-child(3n) {
     border-right: 2px solid $grey;
   }
+  .photography-image, .seo-image, .responsive-image {
+    height: 300px;
+  }
 }
 
 @media (max-width: 670px) {
@@ -778,16 +790,21 @@ figure {
     font-size: 3em;
   }
 
-  .section-big-title {
-    font-size: 3.0em;
-  }
-
   blockquote p:first-child {
     font-size: .8em;
   }
 
   blockquote:before {
     font-size: 2em;
+  }
+
+  .photography-image, .seo-image, .responsive-image {
+    height: 200px;
+  }
+
+  .content-wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
