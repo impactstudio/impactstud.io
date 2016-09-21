@@ -17,22 +17,25 @@ MENU:
 1.0 DEFAULT
   1.1 VARIABLES
 2.0 NAVIGATION
-2.1 SOCIAL
-2.2 FOOTER
-2.3 HEADER
+  2.1 SOCIAL
+  2.2 FOOTER
+  2.3 HEADER
 3.0 GENERAL
-3.1 REUSABLES
+  3.1 REUSABLES
 4.0 HOME - HERO
-4.1 HOME - BIO
-4.2 HOME - TEAM
-4.3 HOME - REVIEWS
-4.4 HOME - PROJECTS
+  4.1 HOME - BIO
+  4.2 HOME - TEAM
+  4.3 HOME - REVIEWS
+  4.4 HOME - PROJECTS
 5.0 SERVICES - RESPONSIVE
-5.1 SERVICES - SEO
-5.2 SERVICES - PHOTOGRAPHY
+  5.1 SERVICES - SEO
+  5.2 SERVICES - PHOTOGRAPHY
 6.0 TEAM
-6.1 TEAM - HERO
-6.2 TEAM - TEAM MEMBERS
+  6.1 TEAM - HERO
+  6.2 TEAM - TEAM MEMBERS
+7.0 PORTFOLIO
+  7.1 PORTFOLIO - PORTFOLIO DESCRIPTION
+  7.2 PORTFOLIO - PORTFOLIO PROJECTS
 7.0 MEDIA QUERIES
 ********************/
 
@@ -308,12 +311,14 @@ html {
 
 body {
   font: normal 17px $typewriter;
+  background-color: #f1f1f1;
 }
 
 p {
   line-height: 25px;
   margin-bottom: 15px;
   font-weight: normal;
+  font-family: $robot;
 }
 
 h2 {
@@ -373,6 +378,10 @@ a {
 
 a:hover {
   color: $tangerine;
+}
+
+figure {
+  padding: 0;
 }
 
 /* ======================
@@ -459,7 +468,6 @@ a:hover {
   background-color: $pumpkin;
   color: $cream;
   font-family: $robot;
-  text-shadow: 1px 1px 1px #333;
 }
 
 .bio-image {
@@ -614,7 +622,66 @@ a:hover {
 }
 
 /* ======================
-7.0 MEDIA QUERIES
+7.0 PORTFOLIO
+====================== */
+
+/* ======================
+7.1 PORTFOLIO - PORTFOLIO DESCRIPTION
+====================== */
+
+.portfolio-description {
+  text-align: center;
+  font-family: $robot;
+  margin-bottom: 50px;
+}
+
+/* ======================
+7.2 PORTFOLIO - PORTFOLIO PROJECTS
+====================== */
+
+.projects-showcase {
+}
+
+.project {
+  display: table;
+  border-right: 2px solid $grey;
+  transition: ease-out .2s;
+  background-color: #e3e3e3;
+  height: 300px;
+  position: relative;
+  display: table-cell;
+}
+
+.project-title {
+  margin-top: 15px;
+}
+
+.project-description {
+  position: absolute;
+  bottom: 0;
+  font-size: 12px;
+  display: table-cell;
+  vertical-align: bottom;
+  box-sizing: border-box;
+  padding: 15px 15px 15px 0;
+}
+
+.project:nth-child(3n) {
+  border-right: none;
+}
+
+.project:hover {
+  background-color: #fff;
+  transition: ease-in .2s;
+  cursor: pointer;
+}
+
+.project-info {
+  text-align: center;
+}
+
+/* ======================
+8.0 MEDIA QUERIES
 ====================== */
 
 @media (max-width: 1870px) {
@@ -678,6 +745,10 @@ a:hover {
 @media (max-width: 768px) {
   .first-team-member {
     padding-bottom: 30px;
+  }
+  .project {
+    border-right: none;
+    border-bottom: 2px solid $grey;
   }
 }
 
