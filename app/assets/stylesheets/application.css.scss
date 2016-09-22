@@ -422,6 +422,22 @@ figure {
   text-align: center;
 }
 
+.content-button {
+  padding: 10px;
+  background: $tangerine;
+  outline: none;
+  border: 3px solid;
+  font-size: 1.4em;
+  display: block;
+  margin: 30px auto 0 auto;
+  transition: ease-out .2s;
+}
+
+.content-button:hover {
+  background: $sky;
+  transition: ease-in .2s;
+}
+
 /* ======================
 4.1 HOME - HERO
 ====================== */
@@ -716,6 +732,12 @@ figure {
   }
 }
 
+@media (max-width: 1130px) {
+  .bio-title{
+    font-size: 1.6em;
+  }
+}
+
 @media (max-width: 1196px) {
   .social-icons {
     font-size: 5em;
@@ -748,13 +770,17 @@ figure {
   }
 }
 
-@media (max-width: 930px) {
+@media (max-width: 938px) {
   .social-icons {
     font-size: 4em;
   }
 
   .section-big-title {
     font-size: 2.5em;
+  }
+
+  .bio-title {
+    font-size: 1.4em;
   }
 }
 
