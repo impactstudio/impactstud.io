@@ -438,6 +438,14 @@ figure {
   transition: ease-in .2s;
 }
 
+.content-button a {
+  color: $cloudy;
+}
+
+.content-button a:hover {
+  text-decoration: none;
+}
+
 /* ======================
 4.1 HOME - HERO
 ====================== */
