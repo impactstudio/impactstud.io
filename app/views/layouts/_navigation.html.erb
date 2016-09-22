@@ -4,5 +4,8 @@
     <li><%= link_to "Our Team", team_path, class: ("active" if current_page?(team_path)) %></li>
     <li><%= link_to "Portfolio", portfolio_path, class: ("active" if current_page?(portfolio_path)) %></li>
     <li><%= link_to "Services", services_path, class: ("active" if current_page?(services_path)) %></li>
+    <% if current_user %>
+      <li><%= link_to "Logout", destroy_user_session_path, method: "delete" %></li>
+    <% end %>
   </ul>
 </div>
