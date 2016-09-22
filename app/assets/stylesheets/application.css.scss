@@ -394,6 +394,10 @@ figure {
   width: 100%;
 }
 
+.justify-text {
+  text-align: justify;
+}
+
 .content-wrapper {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -474,7 +478,6 @@ figure {
   display: block;
   margin: 0 auto;
   width: 60%;
-  margin-bottom: 60px;
 }
 
 .thumbnail {
@@ -705,8 +708,11 @@ figure {
 
   .thumbnail {
     display: block;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
+  }
+
+  .team-member-description {
+    width: 100%;
   }
 }
 
@@ -727,11 +733,18 @@ figure {
   }
 }
 @media (max-width: 988px) {
+  .hero-description {
+    text-align: left;
+  }
   p {
     text-align: center;
   }
   .photography-image, .seo-image, .responsive-image {
     height: 300px;
+  }
+  .hero-wrapper {
+    margin-top: 38px;
+    margin-bottom: 138px;
   }
 }
 
@@ -768,6 +781,10 @@ figure {
   }
   .photography-image, .seo-image, .responsive-image {
     height: 300px;
+  }
+  .bio-image {
+    width: 60%;
+    margin-bottom: 60px;
   }
 }
 
@@ -812,6 +829,10 @@ figure {
   .impact_logo {
     width: 349px;
     margin-bottom: 0;
+  }
+
+  .bio-image {
+    width: 80%;
   }
 
   h1 {
