@@ -213,11 +213,11 @@ body, html {
   z-index: 1;
 }
 
-.contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="phone"] {
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form input[type="phone"], .contact-form textarea {
   width: 100%;
 }
 
-.contact-form input {
+.contact-form input, .contact-form textarea {
   padding-left: 10px;
   display: block;
   border: solid $cream 2px;
@@ -737,6 +737,16 @@ figure {
   margin-left: 15px;
 }
 
+.start-project-form {
+  width: 100%;
+  margin-top: 58px;
+}
+
+.start-project-form #city, .start-project-form #state, .start-project-form #zipcode, .start-project-form #name, .start-project-form #phone, .start-project-form #email {
+  width: 32.5%;
+  display: inline-block;
+}
+
 
 
 /* ======================
@@ -821,6 +831,11 @@ figure {
 
   .bio-title {
     font-size: 1.4em;
+  }
+
+  .start-project-form #city, .start-project-form #state, .start-project-form #zipcode, .start-project-form #name, .start-project-form #phone, .start-project-form #email {
+    width: 49.5%;
+    display: inline-block;
   }
 }
 
@@ -927,6 +942,10 @@ figure {
 
   .footer-links a:last-child {
     margin-left: 0;
+  }
+  .start-project-form #city, .start-project-form #state, .start-project-form #zipcode, .start-project-form #name, .start-project-form #phone, .start-project-form #email {
+    width: 100%;
+    display: block;
   }
 }
 
