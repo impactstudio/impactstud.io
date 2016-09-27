@@ -17,17 +17,26 @@ MENU:
 1.0 DEFAULT
   1.1 VARIABLES
 2.0 NAVIGATION
-2.1 SOCIAL
-2.2 FOOTER
-2.3 HEADER
+  2.1 SOCIAL
+  2.2 FOOTER
+  2.3 HEADER
 3.0 GENERAL
-3.1 REUSABLES
+  3.1 REUSABLES
 4.0 HOME - HERO
-4.1 HOME - BIO
-4.2 HOME - TEAM
-4.3 HOME - REVIEWS
-4.4 HOME - PROJECTS
-5.0 MEDIA QUERIES
+  4.1 HOME - BIO
+  4.2 HOME - TEAM
+  4.3 HOME - REVIEWS
+  4.4 HOME - PROJECTS
+5.0 SERVICES - RESPONSIVE
+  5.1 SERVICES - SEO
+  5.2 SERVICES - PHOTOGRAPHY
+6.0 TEAM
+  6.1 TEAM - HERO
+  6.2 TEAM - TEAM MEMBERS
+7.0 PORTFOLIO
+  7.1 PORTFOLIO - PORTFOLIO DESCRIPTION
+  7.2 PORTFOLIO - PORTFOLIO PROJECTS
+7.0 MEDIA QUERIES
 ********************/
 
 /* ======================
@@ -65,8 +74,10 @@ $tangerine: #f27022;
 $pumpkin: #fd9846;
 $smoke: #474e5e;
 $sky: #00cbdd;
+$cloudy: #f1f1f1;
 $cream: CornSilk;
 $teal: #47a6a6;
+$grey: #a8a8a8;
 $fbBlue: #3b5998;
 $liBlue: #0077B5;
 $twBlue: #1DA1F2;
@@ -112,14 +123,16 @@ body, html {
 
 .navigation li:last-child:after {
   content: "";
+  padding-right: 0;
 }
 
 .navigation li a {
   color: #333;
+  font-size: .8em;
 }
 
 .navigation li a.active {
-  color: $tangerine;
+  color: $pumpkin;
 }
 
 /* ======================
@@ -165,7 +178,7 @@ body, html {
 .social-icon-wrapper {
   display: inline-block;
   width: 17%;
-  margin-top: 12px;
+  margin-top: 5px;
 }
 
 /* ======================
@@ -300,12 +313,14 @@ html {
 
 body {
   font: normal 17px $typewriter;
+  background-color: #f1f1f1;
 }
 
 p {
   line-height: 25px;
   margin-bottom: 15px;
   font-weight: normal;
+  font-family: $robot;
 }
 
 h2 {
@@ -327,6 +342,10 @@ h4 {
 
 ul {
   padding-left: 0;
+}
+
+li {
+  list-style: none;
 }
 
 blockquote {
@@ -355,9 +374,29 @@ blockquote p:first-child {
   font-family: $lightTypewriter;
 }
 
+a {
+  color: $pumpkin;
+}
+
+a:hover {
+  color: $tangerine;
+}
+
+figure {
+  padding: 0;
+}
+
 /* ======================
 3.1 REUSABLES
 ====================== */
+
+.full-width-block {
+  width: 100%;
+}
+
+.justify-text {
+  text-align: justify;
+}
 
 .content-wrapper {
   padding-top: 80px;
@@ -369,9 +408,42 @@ blockquote p:first-child {
 }
 
 .section-big-title {
-  font-size: 4.4em;
+  font-size: 3em;
   font-family: $lightTypewriter;
   margin-bottom: 50px;
+}
+
+.center-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.content-button {
+  padding: 10px;
+  background: $tangerine;
+  outline: none;
+  border: 3px solid;
+  font-size: 1.4em;
+  display: block;
+  margin: 30px auto 0 auto;
+  transition: ease-out .2s;
+}
+
+.content-button:hover {
+  background: $sky;
+  transition: ease-in .2s;
+}
+
+.content-button a {
+  color: $cloudy;
+}
+
+.content-button a:hover {
+  text-decoration: none;
 }
 
 /* ======================
@@ -424,14 +496,12 @@ blockquote p:first-child {
   background-color: $pumpkin;
   color: $cream;
   font-family: $robot;
-  text-shadow: 1px 1px 1px #333;
 }
 
 .bio-image {
   display: block;
   margin: 0 auto;
   width: 60%;
-  margin-bottom: 60px;
 }
 
 .thumbnail {
@@ -473,6 +543,7 @@ blockquote p:first-child {
 .team-member-description {
   font: normal .8em $robot;
   line-height: 20px;
+  width: 90%;
 }
 
 /* ======================
@@ -488,11 +559,156 @@ blockquote p:first-child {
 ====================== */
 
 .projects {
-  background-color: $cream;
+  background-color: $cloudy;
 }
 
 /* ======================
-5.0 MEDIA QUERIES
+5.0 SERVICES - RESPONSIVE
+====================== */
+
+.responsive {
+  background: $pumpkin;
+}
+
+.responsive-image {
+  height: 434px;
+}
+
+.responsive-text {
+  background: $cloudy;
+}
+
+/* ======================
+5.1 SERVICES - SEO
+====================== */
+
+.seo {
+  background: $teal;
+}
+
+.seo-image {
+  height: 405px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.seo-text {
+  background: $cloudy;
+}
+
+/* ======================
+5.2 SERVICES - PHOTOGRAPHY
+====================== */
+
+.photography {
+  background: $grey;
+}
+
+.photography-image {
+  height: 409px;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+
+.photography-text {
+  background: $cloudy;
+}
+
+/* ======================
+6.0 TEAM
+====================== */
+
+/* ======================
+6.1 TEAM - HERO
+====================== */
+
+.team-hero {
+  width: 100%;
+  height: 510px;
+  background-color: $pumpkin;
+  background-image: image-url("nerd.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* ======================
+6.2 TEAM - TEAM MEMBERS
+====================== */
+
+.team-member-links {
+  margin-bottom: 33px;
+}
+
+.team-member-link {
+  margin-bottom: 10px;
+}
+
+.team-member-personal-website {
+  color: $sky;
+}
+
+/* ======================
+7.0 PORTFOLIO
+====================== */
+
+/* ======================
+7.1 PORTFOLIO - PORTFOLIO DESCRIPTION
+====================== */
+
+.portfolio-description {
+  text-align: center;
+  font-family: $robot;
+  margin-bottom: 50px;
+}
+
+/* ======================
+7.2 PORTFOLIO - PORTFOLIO PROJECTS
+====================== */
+
+.projects-showcase {
+}
+
+.project {
+  display: table;
+  border-right: 2px solid $grey;
+  transition: ease-out .2s;
+  background-color: #e3e3e3;
+  height: 300px;
+  position: relative;
+  display: table-cell;
+}
+
+.project-title {
+  margin-top: 30px;
+}
+
+.project-description {
+  position: absolute;
+  bottom: 0;
+  font-size: 12px;
+  display: table-cell;
+  vertical-align: bottom;
+  box-sizing: border-box;
+  padding: 15px 15px 15px 0;
+}
+
+.project:nth-child(3n) {
+  border-right: none;
+}
+
+.project:hover {
+  background-color: #fff;
+  transition: ease-in .2s;
+  cursor: pointer;
+}
+
+.project-info {
+  text-align: center;
+}
+
+/* ======================
+8.0 MEDIA QUERIES
 ====================== */
 
 @media (max-width: 1870px) {
@@ -516,8 +732,17 @@ blockquote p:first-child {
 
   .thumbnail {
     display: block;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
+  }
+
+  .team-member-description {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1130px) {
+  .bio-title{
+    font-size: 1.6em;
   }
 }
 
@@ -525,21 +750,45 @@ blockquote p:first-child {
   .social-icons {
     font-size: 5em;
   }
+  .header-logo {
+    height: 35px;
+    width: 234px;
+    display: block;
+    margin: 0 auto 30px auto;
+  }
+  .header-navigation {
+    width: 100%;
+    text-align: center;
+    font-size: .85em;
+  }
 }
-
 @media (max-width: 988px) {
+  .hero-description {
+    text-align: left;
+  }
   p {
     text-align: center;
   }
+  .photography-image, .seo-image, .responsive-image {
+    height: 300px;
+  }
+  .hero-wrapper {
+    margin-top: 38px;
+    margin-bottom: 138px;
+  }
 }
 
-@media (max-width: 930px) {
+@media (max-width: 938px) {
   .social-icons {
     font-size: 4em;
   }
 
   .section-big-title {
-    font-size: 4.0em;
+    font-size: 2.5em;
+  }
+
+  .bio-title {
+    font-size: 1.4em;
   }
 }
 
@@ -550,6 +799,26 @@ blockquote p:first-child {
 
   .headline {
     font-size: 1.0em;
+  }
+}
+
+@media (max-width: 768px) {
+  .first-team-member {
+    padding-bottom: 30px;
+  }
+  .project {
+    border: 2px solid $grey;
+    margin-bottom: 30px;
+  }
+  .project:nth-child(3n) {
+    border-right: 2px solid $grey;
+  }
+  .photography-image, .seo-image, .responsive-image {
+    height: 300px;
+  }
+  .bio-image {
+    width: 60%;
+    margin-bottom: 60px;
   }
 }
 
@@ -572,10 +841,6 @@ blockquote p:first-child {
     font-size: 3em;
   }
 
-  .section-big-title {
-    font-size: 3.0em;
-  }
-
   blockquote p:first-child {
     font-size: .8em;
   }
@@ -583,12 +848,25 @@ blockquote p:first-child {
   blockquote:before {
     font-size: 2em;
   }
+
+  .photography-image, .seo-image, .responsive-image {
+    height: 200px;
+  }
+
+  .content-wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 @media (max-width: 530px) {
   .impact_logo {
     width: 349px;
     margin-bottom: 0;
+  }
+
+  .bio-image {
+    width: 80%;
   }
 
   h1 {
@@ -622,7 +900,7 @@ blockquote p:first-child {
 
 @media (max-width: 489px) {
   .navigation li {
-    font-size: 1.2em;
+    font-size: .9em;
   }
 
   .social-icons {
