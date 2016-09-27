@@ -36,7 +36,8 @@ MENU:
 7.0 PORTFOLIO
   7.1 PORTFOLIO - PORTFOLIO DESCRIPTION
   7.2 PORTFOLIO - PORTFOLIO PROJECTS
-7.0 MEDIA QUERIES
+8.0 START A PROJECT
+9.0 MEDIA QUERIES
 ********************/
 
 /* ======================
@@ -716,7 +717,30 @@ figure {
 }
 
 /* ======================
-8.0 MEDIA QUERIES
+9.0 START A PROJECT
+====================== */
+
+.start-a-project-footer {
+  background-color: $sky;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.start-a-project-footer-copy {
+  padding-top: 17px;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.start-a-project-footer a {
+  color: black;
+  margin-left: 15px;
+}
+
+
+
+/* ======================
+9.0 MEDIA QUERIES
 ====================== */
 
 @media (max-width: 1870px) {
