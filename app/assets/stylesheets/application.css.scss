@@ -481,6 +481,14 @@ figure {
   transition: $ease-out;
 }
 
+.project_button a {
+  color: $cloudy;
+}
+
+.project_button a:hover {
+  text-decoration: none;
+}
+
 .project_button:hover {
   background-color: $sky;
   transition: $ease-in;
