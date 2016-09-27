@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   resources :projects
   root 'static#home'
   get '/team', to: 'static#team'
-  get '/start-a-project', to: 'static#start_a_project'
+  get '/start-a-project', to: 'static#startproject'
   get '/portfolio', to: 'static#portfolio'
   get '/services', to: 'static#services'
 end
