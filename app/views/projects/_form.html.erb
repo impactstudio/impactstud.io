@@ -1,8 +1,8 @@
 <div class="container-fluid content-wrapper new-project">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      <%= form_for @project, :html => { :multipart => true } do |f| %>
-        <%= render 'shared/errors', object: @project %>
+      <%= form_for project, :html => { :multipart => true } do |f| %>
+        <%= render 'shared/errors', object: project %>
 
         <div class="form-group">
           <%= f.label "Main Wireframe Image" %>
@@ -44,7 +44,7 @@
           <%= f.text_area :description, class: 'form-control' %>
         </div>
 
-        <%= f.fields_for @project.clients.build do |client_field| %>
+        <%= f.fields_for project.clients.build do |client_field| %>
 
         <h4>Client</h4>
 
