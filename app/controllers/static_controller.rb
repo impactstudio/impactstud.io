@@ -8,7 +8,7 @@ class StaticController < ApplicationController
   def services
   end
 
-  def start_a_project
+  def startproject
   end
 
   def portfolio

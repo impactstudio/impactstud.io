@@ -14,9 +14,7 @@
   <% end %>
 </div>
 <%= yield %>
-<% if current_user %>
-  <%= link_to "Logout", destroy_user_session_path, method: "delete" %>
-<% end %>
+
 
 <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>

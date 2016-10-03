@@ -1,0 +1,100 @@
+<div class="container-fluid content-wrapper new-project">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <%= form_for project, :html => { :multipart => true } do |f| %>
+        <%= render 'shared/errors', object: project %>
+
+        <div class="form-group">
+          <%= f.label "Main Wireframe Image" %>
+          <%= f.file_field :main_image, class: 'form-control'%>
+        </div>
+
+        <div class="form-group">
+          <%= f.label "Mobile Wireframe Image" %>
+          <%= f.file_field :mobile_image, class: 'form-control'%>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :desktop_image %>
+          <%= f.file_field :desktop_image, class: 'form-control'%>
+        </div>
+
+        <div class="form-group">
+          <%= f.label "Tablet Image" %>
+          <%= f.file_field :tablet, class: 'form-control'%>
+        </div>
+
+        <div class="form-group">
+          <%= f.label "Phone Image" %>
+          <%= f.file_field :phone, class: 'form-control'%>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :logo %>
+          <%= f.file_field :logo, class: 'form-control'%>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :title %>
+          <%= f.text_field :title, class: 'form-control' %>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :description %>
+          <%= f.text_area :description, class: 'form-control' %>
+        </div>
+
+        <%= f.fields_for project.clients.build do |client_field| %>
+
+        <h4>Client</h4>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group">
+              <%= client_field.label :first_name %>
+              <%= client_field.text_field :first_name, class: 'form-control' %>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <%= client_field.label :last_name %>
+              <%= client_field.text_field :last_name, class: 'form-control' %>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="form-group">
+              <%= client_field.label :email %>
+              <%= client_field.text_field :email, class: 'form-control' %>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+              <%= client_field.label :phone_number %>
+              <%= client_field.phone_field :phone_number, class: 'form-control' %>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+              <%= client_field.label :business_name %>
+              <%= client_field.text_field :business_name, class: 'form-control' %>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="form-group">
+              <%= client_field.label :description %>
+              <%= client_field.text_area :description, class: 'form-control' %>
+            </div>
+          </div>
+        </div>
+
+        <% end %>
+        <%= f.submit "Add Project" %>
+      <% end %>
+    </div>
+  </div>
+</div>
