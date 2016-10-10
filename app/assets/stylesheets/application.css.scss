@@ -752,9 +752,28 @@ figure {
 8.1 PRJOECT - WIREFRAMES
 ====================== */
 
+.project-wireframes {
+  padding-top: 87px;
+  background-color: $grey;
+}
+
+.project-wireframe-desktop {
+  width: 71%;
+  max-width: 1040px;
+}
+
+.project-wireframe-mobile {
+  width: 85%;
+  display: none;
+}
+
 /* ======================
 8.2 PROJECT - CLIENT DESCRIPTION
 ====================== */
+
+.project-logo {
+  margin-bottom: 40px;
+}
 
 /* ======================
 8.3 PROJECT - PROJECT DESCRIPTION / DEVICE SHOWCASE
@@ -891,6 +910,15 @@ figure {
   .hero-wrapper {
     margin-top: 38px;
     margin-bottom: 138px;
+  }
+  .project-wireframes {
+    padding-top: 45px;
+  }
+  .project-wireframe-desktop {
+    display: none;
+  }
+  .project-wireframe-mobile {
+    display: block;
   }
 }
 
