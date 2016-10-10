@@ -11,6 +11,6 @@ Rails.application.routes.draw do
   root 'static#home'
   get '/team', to: 'static#team'
   get '/start-a-project', to: 'static#startproject'
-  get '/portfolio', to: 'static#portfolio'
+  get '/portfolio', to: 'projects#index'
   get '/services', to: 'static#services'
 end
