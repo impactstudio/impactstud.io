@@ -714,11 +714,12 @@ figure {
 
 .project-title {
   margin-top: 30px;
+  color: $smoke;
+  font-size: 1.2em;
 }
 
 .project-description {
-  position: absolute;
-  bottom: 0;
+  color: $smoke;
   font-size: 12px;
   display: table-cell;
   vertical-align: bottom;
@@ -734,6 +735,12 @@ figure {
   background-color: #fff;
   transition: ease-in .2s;
   cursor: pointer;
+}
+
+.project-client-logo {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
 }
 
 .project-info {

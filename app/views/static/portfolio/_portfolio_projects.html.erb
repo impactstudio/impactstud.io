@@ -7,9 +7,9 @@
             <figure class="project col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
               <figcaption class="project-info">
                 <h3 class="project-title"><%= project.title %></h3>
-                <%= image_tag project.logo.url %>
+                <%= image_tag project.logo.url, class: "project-client-logo center-image" %>
                 <p class="project-description">
-                  <%= truncate(project.description, length: 50) %>
+                  <%= truncate(project.description, length: 150) %>
                 </p>
               </figcaption>
             </figure>
