@@ -541,15 +541,6 @@ figure {
   width: 60%;
 }
 
-.thumbnail {
-  height: 173px;
-  width: 173px;
-  border-radius: 50%;
-  display: table-cell;
-  vertical-align: top;
-  margin-right: 30px;
-}
-
 /* ======================
 4.3 HOME - TEAM
 ====================== */
@@ -563,14 +554,19 @@ figure {
   background-size: contain;
 }
 
-.team-member-wrapper {
-  width: 73%;
-  display: table-cell;
+.thumbnail {
+  height: 173px;
+  width: 173px;
+  border-radius: 50%;
   vertical-align: top;
 }
 
+.team-member-wrapper {
+  text-align: center;
+  margin-top: 30px;
+}
+
 .team-member {
-  display: table;
 }
 
 .team-member-role {
@@ -785,7 +781,6 @@ figure {
 
 .project-divider {
   margin-top: 40px;
-  margin-bottom: 40px;
   height: 2px;
   background-color: $grey
 }
@@ -881,7 +876,6 @@ figure {
   }
 
   .thumbnail {
-    display: block;
     margin: 0 auto 20px auto;
   }
 
@@ -969,6 +963,9 @@ figure {
 @media (max-width: 768px) {
   .first-team-member {
     padding-bottom: 30px;
+  }
+  .team-member-wrapper {
+    width: 80%;
   }
   .project {
     border: 2px solid $grey;
