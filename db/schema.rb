@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161010000010) do
+ActiveRecord::Schema.define(version: 20161010000049) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,6 +55,10 @@ ActiveRecord::Schema.define(version: 20161010000010) do
     t.string   "tablet_content_type"
     t.integer  "tablet_file_size"
     t.datetime "tablet_updated_at"
+    t.string   "phone_file_name"
+    t.string   "phone_content_type"
+    t.integer  "phone_file_size"
+    t.datetime "phone_updated_at"
   end
 
   create_table "testimonials", force: :cascade do |t|
