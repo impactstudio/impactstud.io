@@ -750,7 +750,7 @@ figure {
 
 .project-wireframes {
   padding-top: 87px;
-  background-color: $grey;
+  background-color: #ddd;
 }
 
 .project-wireframe-desktop {
@@ -777,6 +777,10 @@ figure {
   padding: 10px;
   font-family: $lightTypewriter;
   border: 2px solid;
+}
+
+.project-btn a {
+  color: $smoke;
 }
 
 .project-divider {
