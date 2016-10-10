@@ -1,25 +1,20 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-6 content-wrapper">
-      <%= image_tag project.logo.url, class: "center-image project-logo" %>
-      <h2 class="section-big-title"><%= project.title %></h2>
-      <p class="center-text"><%= project.description %></p>
-      <button type='button' name='button' class='content-button borders project-btn'>Visit Website</button>
-      <hr class="project-divider">
+    <div class="col-md-6">
+      <%= image_tag project.desktop_image.url, class: "center-image project-logo" %>
     </div>
-    <div class="col-md-3 content-wrapper">
-      <%= image_tag project.logo.url, class: "center-image project-logo" %>
-      <h2 class="section-big-title"><%= project.title %></h2>
-      <p class="center-text"><%= project.description %></p>
-      <button type='button' name='button' class='content-button borders project-btn'>Visit Website</button>
-      <hr class="project-divider">
+    <div class="col-md-3">
+      <%= image_tag project.tablet.url, class: "center-image project-logo" %>
     </div>
-    <div class="col-md-3 content-wrapper">
-      <%= image_tag project.logo.url, class: "center-image project-logo" %>
-      <h2 class="section-big-title"><%= project.title %></h2>
+    <div class="col-md-3">
+      <%= image_tag project.phone.url, class: "center-image project-logo" %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 content-wrapper">
+      <h2 class="bio-title">Responsive on All Devices</h2>
       <p class="center-text"><%= project.description %></p>
-      <button type='button' name='button' class='content-button borders project-btn'>Visit Website</button>
-      <hr class="project-divider">
     </div>
   </div>
 </div>
