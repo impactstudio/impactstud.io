@@ -32,6 +32,6 @@ class ProjectsController < ApplicationController
   end
 
   def project_params
-    params.require(:project).permit(:title, :description, :main_image, :mobile_image, :desktop_image, :logo, :tablet, :phone, clients_attributes: [:first_name, :last_name, :email, :phone_number, :business_name, :description])
+    params.require(:project).permit(:title, :description, :main_image, :mobile_image, :desktop_image, :logo, :tablet, :phone, :url, clients_attributes: [:first_name, :last_name, :email, :phone_number, :business_name, :description])
   end
 end
