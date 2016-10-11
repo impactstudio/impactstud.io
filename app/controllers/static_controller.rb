@@ -1,5 +1,6 @@
 class StaticController < ApplicationController
   def home
+    @projects = Project.all
   end
 
   def team
