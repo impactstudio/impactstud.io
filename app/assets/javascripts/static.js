@@ -1,7 +1,6 @@
 // Header content transition in from left on load
 
 function headerContentTransition(parent, delay) {
-
   leftPositionContent(parent, delay);
   transitionContentIn(parent, delay);
 }
@@ -25,11 +24,12 @@ function transitionContentIn(parent, delay) {
 function resetState(parent) {
   $(parent).children().each(function(){
     $(this).removeClass("get-off-the-page");
-    $(this).css({
-      "margin-left": 0
-    });
   });
 }
 
 // I want this loaded with at the same time as the rest of the DOM
-headerContentTransition(".hero-content", 200);
+if (window.outerWidth > 531) {
+  headerContentTransition(".hero-content", 200);
+} else {
+  resetState(".hero-content");
+}

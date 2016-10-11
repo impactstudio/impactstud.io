@@ -502,10 +502,12 @@ figure {
   height: 83px;
   width: 670px;
   margin-bottom: 20px;
+  margin-left: -8px;
 }
 
 .hero-description {
   width: 100%;
+  line-height: 33px;
 }
 
 .project_button {
@@ -1061,6 +1063,10 @@ figure {
   .impact_logo {
     width: 349px;
     margin-bottom: 0;
+  }
+
+  .hero-description {
+    text-align: center;
   }
 
   .bio-image {
