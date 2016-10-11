@@ -1,4 +1,4 @@
-// Header content transition in from left on load
+// --- HOME HERO CONTENT TRANSTION ON LOAD ---
 
 function headerContentTransition(parent, delay) {
   leftPositionContent(parent, delay);
@@ -33,6 +33,49 @@ function resetState(parent) {
 // I want this loaded with at the same time as the rest of the DOM
 if (window.outerWidth > 531) {
   headerContentTransition(".hero-content", 200);
-} else {
+}
+else {
   resetState(".hero-content")
 }
+
+// --- FIXED NAVBAR ON SCROLL ---
+
+function removeSubPageLogo() {
+  $(".header-logo").css({
+    "display": "none"
+  });
+}
+
+function readjustNavbar() {
+  $(".header-navigation").css({
+    "width": "100%",
+    "text-align": "center",
+    "display": "inline-block"
+  });
+}
+
+function showSubPageLogo() {
+  $(".header-logo").css({
+    "display": "block",
+    "margin": "0 auto 30px auto"
+  });
+}
+
+function fixedNavbarAccomodation() {
+  $(window).scroll(function() {
+    var windowWidth = $(window).width();
+    if (windowWidth < 1200) {
+      if ($(this).scrollTop() > 200) {
+        removeSubPageLogo();
+        readjustNavbar();
+      }
+    else {
+      showSubPageLogo();
+    }
+    }
+   });
+}
+
+$(document).ready(function(){
+  fixedNavbarAccomodation();
+});

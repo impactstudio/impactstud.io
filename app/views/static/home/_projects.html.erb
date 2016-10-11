@@ -1,4 +1,10 @@
-<div class="container-fluid projects content-wrapper <%= 'start-a-project-section' if current_page?(root_path) %>">
-  <h2 class="section-big-title">Our 2 Cents</h2>
+<div class="container-fluid projects content-wrapper">
+  <!-- <%= 'start-a-project-section' if current_page?(root_path) %> -->
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h2 class="section-big-title">Recent clients we've worked with</h2>
+      <p class="center-text">Together we have had experience with all things "design" with a wide range of companies including Law Firms, Bands, Churchs and even Carpet Cleaning Corporations! We ain't scared of no ghosts! And, by ghosts I'm of course referring to the industry that your company is trying to dominate.</p>
+    </div>
+  </div>
   <%= render partial: "static/portfolio/portfolio_projects" %>
 </div>
