@@ -509,6 +509,11 @@ figure {
   width: 100%;
   line-height: 33px;
   margin-bottom: 20px;
+  font-family: $typewriter;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  background-color: rgba(241, 241, 241, .7);
+  padding: 10px;
 }
 
 .project_button {
