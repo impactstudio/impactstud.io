@@ -17,7 +17,7 @@ function leftPositionContent(parent, delay) {
 function transitionContentIn(parent, delay) {
   $(parent).children().each(function(){
     $(this).removeClass("get-off-the-page");
-    $(this).delay(delay += 150).animate({ marginLeft: 0 }, {duration: 400, easing: 'linear'});
+    $(this).delay(delay += 250).animate({ marginLeft: 0 }, {duration: 400, easing: 'linear'});
   });
 }
 
@@ -50,7 +50,6 @@ function readjustNavbar() {
   $(".header-navigation").css({
     "width": "100%",
     "text-align": "center",
-    "display": "inline-block"
   });
 }
 
