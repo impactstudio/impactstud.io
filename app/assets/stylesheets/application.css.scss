@@ -474,6 +474,14 @@ figure {
   text-decoration: none;
 }
 
+.hide-element {
+  opacity: 0;
+}
+
+.get-off-the-page {
+  margin-left: -9999px;
+}
+
 /* ======================
 4.1 HOME - HERO
 ====================== */
@@ -494,6 +502,10 @@ figure {
   height: 83px;
   width: 670px;
   margin-bottom: 20px;
+}
+
+.hero-description {
+  width: 100%;
 }
 
 .project_button {
@@ -921,6 +933,16 @@ figure {
     font-size: .85em;
   }
 }
+
+@media (max-width: 991px) {
+  .bio-title {
+    margin-top: 40px;
+  }
+  .bio-image {
+    width: 60%;
+  }
+}
+
 @media (max-width: 988px) {
   .hero-description {
     text-align: left;
