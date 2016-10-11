@@ -16,6 +16,7 @@ function leftPositionContent(parent, delay) {
 
 function transitionContentIn(parent, delay) {
   $(parent).children().each(function(){
+    $(this).removeClass("get-off-the-page");
     $(this).delay(delay += 150).animate({ marginLeft: 0 }, {duration: 400, easing: 'linear'});
   });
 }
@@ -23,6 +24,9 @@ function transitionContentIn(parent, delay) {
 function resetState(parent) {
   $(parent).children().each(function(){
     $(this).removeClass("get-off-the-page");
+    $(this).css({
+      "margin-left": 0
+    });
   });
 }
 
@@ -30,5 +34,5 @@ function resetState(parent) {
 if (window.outerWidth > 531) {
   headerContentTransition(".hero-content", 200);
 } else {
-  resetState(".hero-content");
+  resetState(".hero-content")
 }
