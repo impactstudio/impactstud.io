@@ -1048,6 +1048,17 @@ figure {
   }
 }
 
+@media (max-width: 710px) {
+  .navigation li:last-child {
+    margin-top: 15px;
+  }
+  .navigation li:nth-child(4):after {
+    content: "";
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 @media (max-width: 670px) {
   .contact-form input {
     box-shadow: 1px 1px 3px 0px #333
