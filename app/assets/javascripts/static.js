@@ -1,9 +1,5 @@
 // --- HOME HERO CONTENT TRANSTION ON LOAD ---
-
-function headerContentTransition(parent, delay) {
-  leftPositionContent(parent, delay);
-  transitionContentIn(parent, delay);
-}
+// - position content left
 
 function leftPositionContent(parent, delay) {
   $(parent).children().each(function(){
@@ -19,6 +15,11 @@ function transitionContentIn(parent, delay) {
     $(this).removeClass("get-off-the-page");
     $(this).delay(delay += 250).animate({ marginLeft: 0 }, {duration: 400, easing: 'linear'});
   });
+}
+
+function headerContentTransition(parent, delay) {
+  leftPositionContent(parent, delay);
+  transitionContentIn(parent, delay);
 }
 
 function resetState(parent) {
@@ -46,7 +47,7 @@ function removeSubPageLogo() {
   });
 }
 
-function readjustNavbar() {
+function reAdjustNavbar() {
   $(".header-navigation").css({
     "width": "100%",
     "text-align": "center",
@@ -66,7 +67,7 @@ function fixedNavbarAccomodation() {
     if (windowWidth < 1200) {
       if ($(this).scrollTop() > 200) {
         removeSubPageLogo();
-        readjustNavbar();
+        reAdjustNavbar();
       }
     else {
       showSubPageLogo();
