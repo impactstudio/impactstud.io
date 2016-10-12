@@ -124,7 +124,7 @@ body, html {
 .navigation li {
   list-style-type: none;
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 1.1em;
 }
 
 .navigation li:after {
@@ -306,7 +306,7 @@ body, html {
 
 .header {
   background-color: $teal;
-  padding-top: 26px;
+  padding-top: 16px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -315,11 +315,12 @@ body, html {
 
 .header-logo {
   height: 35px;
-  width: 301px;
+  width: 220px;
 }
 
 .header-navigation {
   float: right;
+  padding-top: 6px;
 }
 
 /* ======================
@@ -427,7 +428,7 @@ figure {
 ====================== */
 
 .navbar-fixed-acommodate {
-  margin-top: 84px;
+  margin-top: 74px;
 }
 
 .full-width-block {
@@ -934,7 +935,10 @@ figure {
 
 @media (max-width: 1200px) {
   .navbar-fixed-acommodate {
-    margin-top: 146px;
+    margin-top: 128px;
+  }
+  .header-navigation {
+    padding-top: 10px;
   }
 }
 
@@ -949,8 +953,8 @@ figure {
     font-size: 5em;
   }
   .header-logo {
-    height: 35px;
-    width: 234px;
+    height: 28px;
+    width: 220px;
     display: block;
     margin: 0 auto 30px auto;
   }
@@ -968,6 +972,9 @@ figure {
   .bio-image {
     width: 60%;
     float: none;
+  }
+  .navbar-fixed-acommodate {
+    margin-top: 132px;
   }
 }
 
@@ -1049,10 +1056,13 @@ figure {
 }
 
 @media (max-width: 710px) {
+  .header-navigation {
+    padding-top: 0;
+  }
   .navigation li:last-child {
     margin-top: 15px;
   }
-  .navigation li:nth-child(4):after {
+  .hero .navigation li:nth-child(4):after {
     content: "";
     padding-left: 10px;
     padding-right: 10px;
@@ -1075,7 +1085,7 @@ figure {
   }
 
   .navbar-fixed-acommodate {
-    margin-top: 146px;
+    margin-top: 137px;
   }
 
   .social-icons {
@@ -1164,7 +1174,7 @@ figure {
     font-size: 2.5em;
   }
   .navbar-fixed-acommodate {
-    margin-top: 137px;
+    margin-top: 167px;
   }
 }
 
