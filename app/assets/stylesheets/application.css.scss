@@ -614,7 +614,6 @@ figure {
 }
 
 .team-member-wrapper {
-  text-align: center;
   margin-top: 30px;
 }
 
@@ -626,9 +625,14 @@ figure {
 }
 
 .team-member-description {
+  text-align: left;
   font: normal .8em $robot;
   line-height: 20px;
   width: 90%;
+}
+
+.team-member-description:nth-child(1n) {
+  margin-bottom: 15px;
 }
 
 /* ======================
@@ -1052,11 +1056,12 @@ figure {
 }
 
 @media (max-width: 768px) {
-  .first-team-member {
-    padding-bottom: 30px;
-  }
+
   .team-member-wrapper {
     width: 80%;
+  }
+  .team-member-on-team-page:first-child {
+    margin-bottom: 30px;
   }
   .project {
     border: 2px solid $grey;
