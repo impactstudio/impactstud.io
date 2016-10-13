@@ -4,6 +4,11 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   include Pundit
   rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
+  before_filter :get_random_phone_number
+
+  def get_random_phone_number
+    @phone_number = ["970-462-9768","970-460-4255"].sample
+  end
 
   def user_not_authorized
     unless current_user
