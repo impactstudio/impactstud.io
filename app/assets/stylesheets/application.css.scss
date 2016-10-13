@@ -615,6 +615,7 @@ figure {
 
 .team-member-wrapper {
   margin-top: 30px;
+  text-align: center;
 }
 
 .team-member {
@@ -625,7 +626,6 @@ figure {
 }
 
 .team-member-description {
-  text-align: left;
   font: normal .8em $robot;
   line-height: 20px;
   width: 90%;
@@ -735,6 +735,10 @@ figure {
 
 .team-member-personal-website {
   color: $sky;
+}
+
+.team-member-on-team-page .team-member-description {
+  text-align: left;
 }
 
 /* ======================
