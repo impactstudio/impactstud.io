@@ -1139,6 +1139,7 @@ figure {
 }
 
 @media (max-width: 530px) {
+
   .impact_logo {
     width: 349px;
     margin-bottom: 0;
@@ -1170,6 +1171,21 @@ figure {
 
   .headline {
     text-align: center;
+  }
+
+  .start-a-project-footer {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .start-a-project-footer-copy {
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  .footer-links {
+    text-align: center;
+    width: 100%;
   }
 
   .footer-links p {
