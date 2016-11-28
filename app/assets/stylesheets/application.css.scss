@@ -528,6 +528,10 @@ figure {
   margin-left: -8px;
 }
 
+.hero-slogan {
+  display: block;
+}
+
 .hero-description {
   width: 100%;
   line-height: 33px;
@@ -1187,10 +1191,6 @@ h3.services-subheading {
     margin-bottom: 0;
   }
 
-  .hero-description {
-    text-align: center;
-  }
-
   .bio-image {
     width: 80%;
   }
@@ -1244,6 +1244,12 @@ h3.services-subheading {
   .start-project-form #city, .start-project-form #state, .start-project-form #zipcode, .start-project-form #name, .start-project-form #phone, .start-project-form #email {
     width: 100%;
     display: block;
+  }
+}
+
+@media (max-width: 503px) {
+  .hero-slogan {
+    text-align: center;
   }
 }
 
