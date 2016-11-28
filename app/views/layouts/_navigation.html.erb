@@ -2,9 +2,9 @@
   <ul>
     <li><%= link_to "Home", root_path, class: ("active" if current_page?(root_path)) %></li>
     <li><%= link_to "Our Team", team_path, class: ("active" if current_page?(team_path)) %></li>
-    <li><%= link_to "Portfolio", portfolio_path, class: ("active" if current_page?(portfolio_path)) %></li>
+    <!-- <li><%= link_to "Portfolio", portfolio_path, class: ("active" if current_page?(portfolio_path)) %></li> -->
     <li><%= link_to "Services", services_path, class: ("active" if current_page?(services_path)) %></li>
-    <li class="give-us-a-call"><a href="tel:+<%= @phone_number %>"><i class="fa fa-phone"></i> GIVE US A CALL!</a></li>
+    <li class="give-us-a-call"><a href="tel:+<%= @phone_number %>"><i class="fa fa-phone"></i> Give Us a Call!</a></li>
     <% if current_user %>
       <li><%= link_to "Logout", destroy_user_session_path, method: "delete" %></li>
     <% end %>

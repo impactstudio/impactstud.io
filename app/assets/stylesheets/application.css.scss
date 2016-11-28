@@ -1178,6 +1178,10 @@ h3.services-subheading {
 
 @media (max-width: 530px) {
 
+  .navigation li:nth-child(3):after {
+    content: "";
+  }
+
   .impact_logo {
     width: 349px;
     margin-bottom: 0;
@@ -1245,7 +1249,7 @@ h3.services-subheading {
 
 @media (max-width: 489px) {
   .navigation li {
-    font-size: 17px;
+    font-size: 20px;
   }
 
   .social-icons {
