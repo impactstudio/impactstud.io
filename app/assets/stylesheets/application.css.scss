@@ -1125,7 +1125,7 @@ h3.services-subheading {
     width: 80%;
   }
   .team-member-on-team-page:first-child {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
   .project {
     border: 2px solid $grey;
@@ -1196,6 +1196,11 @@ h3.services-subheading {
 }
 
 @media (max-width: 530px) {
+
+  .hero-wrapper {
+    margin-top: 0px;
+    margin-bottom: 43px;
+  }
 
   .navigation li:nth-child(3):after {
     content: "";
