@@ -656,6 +656,22 @@ figure {
 5.0 SERVICES - RESPONSIVE
 ====================== */
 
+.service-process {
+  border-radius: 8px;
+  background-color: white;
+  padding: 20px;
+}
+
+.service-process h4 {
+  color: $teal;
+}
+
+h3.services-subheading {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: $tangerine;
+}
+
 .responsive {
   background: $pumpkin;
 }
@@ -1016,6 +1032,14 @@ figure {
   }
   .navbar-fixed-acommodate {
     margin-top: 132px;
+  }
+
+  .service-process p {
+    text-align: left;
+  }
+
+  .service-process li {
+    margin-top: 30px;
   }
 }
 
