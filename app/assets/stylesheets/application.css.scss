@@ -433,6 +433,19 @@ figure {
   padding: 0;
 }
 
+.nested-list {
+  margin-bottom: 20px;
+}
+
+.nested-list li {
+  margin-bottom: 5px;
+  color: $smoke;
+}
+
+.nested-list li:before {
+  content: "// "
+}
+
 /* ======================
 3.1 REUSABLES
 ====================== */
@@ -541,6 +554,7 @@ figure {
   border-radius: 5px;
   background-color: rgba(241, 241, 241, .7);
   padding: 10px;
+  text-align: justify;
 }
 
 .project_button {
@@ -660,6 +674,14 @@ figure {
 5.0 SERVICES - RESPONSIVE
 ====================== */
 
+.lead {
+  font-size: 1.1em;
+}
+
+.lead, .service-process p {
+  text-align: justify;;
+}
+
 .service-process {
   border-radius: 8px;
   background-color: white;
@@ -769,7 +791,7 @@ h3.services-subheading {
 }
 
 .team-member-on-team-page .team-member-description {
-  text-align: left;
+  text-align: justify;
 }
 
 /* ======================
@@ -1038,19 +1060,12 @@ h3.services-subheading {
     margin-top: 132px;
   }
 
-  .service-process p {
-    text-align: left;
-  }
-
   .service-process li {
     margin-top: 30px;
   }
 }
 
 @media (max-width: 988px) {
-  .hero-description {
-    text-align: left;
-  }
   p {
     text-align: center;
   }
