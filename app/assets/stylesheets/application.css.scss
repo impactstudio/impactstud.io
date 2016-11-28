@@ -235,7 +235,7 @@ body, html {
 .contact-form input, .contact-form textarea {
   padding-left: 10px;
   display: block;
-  border: solid $cream 2px;
+  border: solid $tangerine 2px;
   margin: 20px 0;
   background-color: $pumpkin;
   color: $cream;
@@ -986,6 +986,9 @@ figure {
 }
 
 @media (max-width: 1196px) {
+  .team-page-headline {
+    margin-top: 130px;
+  }
   .social-icons {
     font-size: 5em;
   }
@@ -1070,6 +1073,9 @@ figure {
 }
 
 @media (max-width: 768px) {
+  .team-page-headline {
+    margin-top: 140px;
+  }
 
   .team-member-wrapper {
     width: 80%;
@@ -1108,16 +1114,13 @@ figure {
 }
 
 @media (max-width: 670px) {
-  .contact-form input {
-    box-shadow: 1px 1px 3px 0px #333
-  }
-
   .contact-form input[type="submit"] {
     background-color: $tangerine;
   }
 }
 
 @media (max-width: 645px) {
+
   .impact_logo {
     width: 480px;
   }
