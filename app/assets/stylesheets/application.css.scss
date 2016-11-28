@@ -293,11 +293,12 @@ body, html {
   border: none;
   padding: 5px 10px;
   transition: $ease-out;
+  background-color: $tangerine;
 }
 
 .contact-form input[type="submit"]:hover {
   transition: $ease-in;
-  background-color: $tangerine;
+  background-color: $pumpkin;
 }
 
 /* ======================
