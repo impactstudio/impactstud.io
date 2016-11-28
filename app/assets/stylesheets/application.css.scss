@@ -1248,6 +1248,10 @@ h3.services-subheading {
 }
 
 @media (max-width: 489px) {
+  .navigation li:nth-child(3):after {
+    content: "//";
+  }
+
   .navigation li {
     font-size: 20px;
   }
