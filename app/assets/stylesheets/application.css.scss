@@ -495,11 +495,16 @@ figure {
   display: block;
   margin: 30px auto 0 auto;
   transition: ease-out .2s;
+  width: 52%;
+  color: $cloudy;
+  text-decoration: none;
 }
 
 .content-button:hover {
   background: $sky;
   transition: ease-in .2s;
+  text-decoration: none;
+  color: $cloudy;
 }
 
 .content-button a {
