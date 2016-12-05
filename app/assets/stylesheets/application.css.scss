@@ -1303,6 +1303,17 @@ h3.services-subheading {
   }
 }
 
+@media (max-width: 396px) {
+  .navbar-fixed-acommodate {
+    margin-top: 165px;
+  }
+  .navigation li:nth-child(4):after, .navigation li:nth-child(3):after {
+    content: "";
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 @media (max-width: 373px) {
   .impact_logo {
     width: 293px;
