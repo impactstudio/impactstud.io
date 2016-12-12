@@ -5,6 +5,7 @@ $contactForm.submit(function(e) {
 	var $submit = $('input:submit', $contactForm);
 	var defaultSubmitText = $submit.val();
   var email = "<%= ENV['CONTACT_EMAIL'] %>";
+	
 
 	$.ajax({
 		url: '//formspree.io/' + email,
