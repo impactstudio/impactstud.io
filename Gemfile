@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'sitemap_generator'
 gem 'pundit'
 gem 'devise'
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
