@@ -167,6 +167,10 @@ body, html {
   transition: $ease-in;
 }
 
+.social-icon-link:visited {
+  color: $smoke;
+}
+
 .github-link:hover {
   color: black;
 }
