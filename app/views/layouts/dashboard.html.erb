@@ -10,13 +10,20 @@
   </head>
   <body>
     <%= render partial: 'dashboard/navigation' %>
-    <div class="container-fluid">
-      <div class="row">
-        <h1>ADMIN!!!</h1>
+    <div id="wrapper">
+      <%= render partial: 'dashboard/left_sidebar' %>
+      <div id="page-content-wrapper">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1>ADMIN!!!</h1>
 
-        <%= yield %>
+              <%= yield %>
+            </div>
+          </div>
+        </div>
       </div>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     </div>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   </body>
 </html>
