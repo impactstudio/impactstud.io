@@ -3,9 +3,7 @@ Rails.application.routes.draw do
     get 'dashboard', to: 'dashboard#index'
   end
 
-  devise_for :users, path_names: {
-    sign_up: ""
-  }
+  devise_for :users, skip: [:registrations]
 
   devise_scope :user do
     get "/pokemon_center" => "devise/sessions#new"
