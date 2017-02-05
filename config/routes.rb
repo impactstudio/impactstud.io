@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   namespace :pokemon_center do
-    get 'dashboard', to: 'dashboard#index'
+    get '', to: 'dashboard#index', as: '/'
+    resources :projects
   end
 
   devise_for :users, skip: [:registrations]
@@ -13,7 +14,6 @@ Rails.application.routes.draw do
     get '', to: 'dashboard#index', as: '/'
   end
 
-  resources :projects
   root 'static#home'
   get '/team', to: 'static#team'
   get '/start-a-project', to: 'static#startproject'

@@ -1,4 +1,4 @@
-class ClientsController < ApplicationController
+class PokemonCenter::ClientsController < ApplicationController
   def create
     @client = Client.create(client_params)
   end
