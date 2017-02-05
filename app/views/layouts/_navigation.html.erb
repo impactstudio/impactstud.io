@@ -6,7 +6,7 @@
     <li><%= link_to "Services", services_path, class: ("active" if current_page?(services_path)) %></li>
     <li class="give-us-a-call"><a href="tel:+<%= @phone_number %>"><i class="fa fa-phone"></i> Give Us a Call!</a></li>
     <% if current_user %>
-      <li><%= link_to "Logout", destroy_user_session_path, method: "delete" %></li>
+      <li><%= link_to "Pokemon Center", pokemon_center_path %></li>
     <% end %>
   </ul>
 </div>
