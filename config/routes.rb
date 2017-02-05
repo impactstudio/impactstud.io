@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   namespace :pokemon_center do
     get '', to: 'dashboard#index', as: '/'
-    resources :projects
+    resources :projects, :clients, :testimonials
   end
 
   devise_for :users, skip: [:registrations]

@@ -18,6 +18,6 @@ class ApplicationController < ActionController::Base
   end
 
   def after_sign_in_path_for(resource)
-    pokemon_center_dashboard_path
+    pokemon_center_path
   end
 end
