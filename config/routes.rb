@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   end
 
   root 'static#home'
+  resources :projects, only: [:index, :show]
   get '/team', to: 'static#team'
   get '/start-a-project', to: 'static#startproject'
   get '/portfolio', to: 'projects#index'
