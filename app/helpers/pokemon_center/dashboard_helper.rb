@@ -1,0 +1,2 @@
+module PokemonCenter::DashboardHelper
+end
