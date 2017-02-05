@@ -15,4 +15,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require formspree
+//= require_tree ./angle/
 //= require_tree .

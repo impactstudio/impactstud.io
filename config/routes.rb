@@ -13,4 +13,6 @@ Rails.application.routes.draw do
   get '/start-a-project', to: 'static#startproject'
   get '/portfolio', to: 'projects#index'
   get '/services', to: 'static#services'
+  get '/api/i18n/:locale' => 'api#i18n'
+  get '/singleview' => 'singleview#index'
 end
