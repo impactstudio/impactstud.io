@@ -17,3 +17,13 @@
 //= require turbolinks
 //= require formspree
 //= require_tree .
+
+function flashTimeout() {
+  setTimeout(function(){
+    $('#flash').remove();
+  }, 5000);
+}
+
+$(document).ready(function(){
+  flashTimeout();
+});
