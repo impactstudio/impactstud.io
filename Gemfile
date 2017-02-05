@@ -7,6 +7,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'slim'
 gem 'font-awesome-rails'
 gem 'dotenv-rails'
+gem 'bootstrap_sb_admin_base_v2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
